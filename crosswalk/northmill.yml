@@ -1,0 +1,37 @@
+provider: northmill
+apis_io: https://apis.io/providers/northmill/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  store_location:
+    path_segment:
+    - locations
+    - stores
+    properties:
+      name: Name
+      phone: Phone
+      status: IsActive
+      id: Id
+      country: Country
+      currency: CurrencyCode
+      email: Email
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/northmill-flo-api-swagger.json#DELETE /v2/locations/{Id}
+    - openapi/_original/northmill-flo-api-swagger.json#GET /v2/locations
+    - openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores
+    - openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores/{externalStoreId}
+    - openapi/_original/northmill-flo-api-swagger.json#POST /v2/locations
+  sale:
+    path_segment:
+    - receipts
+    properties:
+      id: Id
+      payments: Payments
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/northmill-flo-api-swagger.json#GET /v2/receipts
+    - openapi/_original/northmill-flo-api-swagger.json#GET /v2/receipts/{id}
+    - openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores/{externalStoreId}/receipts
+    - openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores/{externalStoreId}/receipts/{id}
+    - openapi/_original/northmill-flo-api-swagger.json#POST /v2/receipts

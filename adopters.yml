@@ -1,0 +1,123 @@
+context: point-of-sale
+generated: '2026-11-10'
+adopters:
+- provider: agendapro
+  apis_io: https://apis.io/providers/agendapro/
+  crosswalk: crosswalk/agendapro.yml
+  concepts:
+  - sale
+  - store_location
+- provider: aramark
+  apis_io: https://apis.io/providers/aramark/
+  crosswalk: crosswalk/aramark.yml
+  concepts:
+  - sale
+  - shift
+- provider: block
+  apis_io: https://apis.io/providers/block/
+  crosswalk: crosswalk/block.yml
+  concepts:
+  - sale
+  - shift
+  - store_location
+- provider: flipdish
+  apis_io: https://apis.io/providers/flipdish/
+  crosswalk: crosswalk/flipdish.yml
+  concepts:
+  - sale
+  - store_location
+- provider: fudo
+  apis_io: https://apis.io/providers/fudo/
+  crosswalk: crosswalk/fudo.yml
+  concepts:
+  - sale
+- provider: green-check-verified
+  apis_io: https://apis.io/providers/green-check-verified/
+  crosswalk: crosswalk/green-check-verified.yml
+  concepts:
+  - sale
+- provider: grubhub
+  apis_io: https://apis.io/providers/grubhub/
+  crosswalk: crosswalk/grubhub.yml
+  concepts:
+  - sale
+- provider: lightspeed
+  apis_io: https://apis.io/providers/lightspeed/
+  crosswalk: crosswalk/lightspeed.yml
+  concepts:
+  - sale
+  - shift
+  - store_location
+  - terminal
+- provider: lightspeed-pos
+  apis_io: https://apis.io/providers/lightspeed-pos/
+  crosswalk: crosswalk/lightspeed-pos.yml
+  concepts:
+  - sale
+- provider: mercado-pago
+  apis_io: https://apis.io/providers/mercado-pago/
+  crosswalk: crosswalk/mercado-pago.yml
+  concepts:
+  - sale
+  - store_location
+- provider: mindbody
+  apis_io: https://apis.io/providers/mindbody/
+  crosswalk: crosswalk/mindbody.yml
+  concepts:
+  - sale
+  - shift
+  - store_location
+- provider: newstore
+  apis_io: https://apis.io/providers/newstore/
+  crosswalk: crosswalk/newstore.yml
+  concepts:
+  - sale
+  - store_location
+- provider: northmill
+  apis_io: https://apis.io/providers/northmill/
+  crosswalk: crosswalk/northmill.yml
+  concepts:
+  - sale
+  - store_location
+- provider: punchh
+  apis_io: https://apis.io/providers/punchh/
+  crosswalk: crosswalk/punchh.yml
+  concepts:
+  - sale
+  - store_location
+- provider: ready2order
+  apis_io: https://apis.io/providers/ready2order/
+  crosswalk: crosswalk/ready2order.yml
+  concepts:
+  - sale
+- provider: roomkeypms
+  apis_io: https://apis.io/providers/roomkeypms/
+  crosswalk: crosswalk/roomkeypms.yml
+  concepts:
+  - sale
+- provider: square
+  apis_io: https://apis.io/providers/square/
+  crosswalk: crosswalk/square.yml
+  concepts:
+  - sale
+  - shift
+  - store_location
+- provider: sumup
+  apis_io: https://apis.io/providers/sumup/
+  crosswalk: crosswalk/sumup.yml
+  concepts:
+  - sale
+  - terminal
+- provider: tribe-payments
+  apis_io: https://apis.io/providers/tribe-payments/
+  crosswalk: crosswalk/tribe-payments.yml
+  concepts:
+  - sale
+  - terminal
+- provider: tyro
+  apis_io: https://apis.io/providers/tyro/
+  crosswalk: crosswalk/tyro.yml
+  concepts:
+  - sale
+  - store_location
+  - terminal

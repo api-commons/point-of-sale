@@ -1,0 +1,20 @@
+provider: lightspeed-pos
+apis_io: https://apis.io/providers/lightspeed-pos/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  sale:
+    path_segment:
+    - sales
+    properties:
+      id: id
+      customer_id: customer_id
+      status: status
+      location_id: outlet_id
+      line_items: line_items
+      tax: total_tax
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lightspeed-pos-retail-x-series-openapi.yml#GET /sales
+    - openapi/_original/lightspeed-pos-retail-x-series-openapi.yml#GET /sales/{id}
+    - openapi/_original/lightspeed-pos-retail-x-series-openapi.yml#POST /sales

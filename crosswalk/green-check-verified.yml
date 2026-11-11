@@ -1,0 +1,18 @@
+provider: green-check-verified
+apis_io: https://apis.io/providers/green-check-verified/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  sale:
+    path_segment:
+    - sales
+    properties:
+      id: id
+      customer_id: customer
+      payments: payments
+      line_items: line_items
+      tax: taxes
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/green-check-verified-access-openapi.yaml#GET /crbs/{crb_id}/sales
+    - openapi/_original/green-check-verified-access-openapi.yaml#GET /service-providers/{sp_id}/crbs/{crb_id}/sales

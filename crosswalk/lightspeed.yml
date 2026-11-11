@@ -1,0 +1,72 @@
+provider: lightspeed
+apis_io: https://apis.io/providers/lightspeed/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  store_location:
+    path_segment:
+    - outlets
+    - outlet
+    properties:
+      name: name
+      phone: phone
+      id: id
+      currency: currency
+      time_zone: time_zone
+      latitude: latitude
+      longitude: longitude
+      email: email
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /outlets
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /outlets/{outlet_id}
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /services_agenda/outlet/{outlet_id}
+  terminal:
+    path_segment:
+    - registers
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /registers
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /registers/{register_id}
+  sale:
+    path_segment:
+    - sales
+    properties:
+      id: id
+      customer_id: customer_id
+      payments: payments
+      status: state
+      created_at: created_at
+      line_items: line_items
+      tax: taxes
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lightspeed-k-series-openapi.json#GET /f/v2/business-location/{businessLocationId}/sales
+    - openapi/_original/lightspeed-k-series-openapi.yml#GET /f/v2/business-location/{businessLocationId}/sales
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /sales
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /sales/{sale_id}
+    - openapi/_original/lightspeed-x-series-openapi.json#POST /sales
+  shift:
+    path_segment:
+    - shift
+    - shifts
+    properties:
+      created_at: created_at
+      employee_id:
+      - staffId
+      - user_id
+      id:
+      - uuid
+      - id
+      location_id: businessLocationId
+      updated_at: updated_at
+      version: version
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/lightspeed-k-series-openapi.json#GET /staff/v1/businessLocations/{businessLocationId}/shift
+    - openapi/_original/lightspeed-k-series-openapi.yml#GET /staff/v1/businessLocations/{businessLocationId}/shift
+    - openapi/_original/lightspeed-x-series-openapi.json#GET /shifts

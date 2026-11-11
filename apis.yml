@@ -1,0 +1,54 @@
+aid: common-point-of-sale
+name: Point of Sale
+type: Common
+description: 'The common Point of Sale vocabulary, distilled from the harvested OpenAPI of 84 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Point-of-Sale
+- POS
+- Point of Sale
+- Retail POS
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-point-of-sale:point-of-sale
+  name: Common Point of Sale Interface
+  description: The Point of Sale interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/point-of-sale
+  tags:
+  - Point-of-Sale
+  - POS
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: store_location
+    url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/schema/store_location.json
+  - type: JSONSchema
+    name: terminal
+    url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/schema/terminal.json
+  - type: JSONSchema
+    name: sale
+    url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/schema/sale.json
+  - type: JSONSchema
+    name: shift
+    url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/schema/shift.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/point-of-sale/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

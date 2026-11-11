@@ -1,0 +1,283 @@
+openapi: 3.1.0
+info:
+  title: Point of Sale (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Point of Sale interface, distilled from the harvested OpenAPI of 84 providers in the
+    APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /store-locations:
+    get:
+      operationId: listStoreLocations
+      summary: List store locations
+      tags:
+      - Store Locations
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/StoreLocation'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createStoreLocation
+      summary: Create a store location
+      tags:
+      - Store Locations
+      x-commons-tier: core
+      x-commons-share: 0.636
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /store-locations/{store_location_id}:
+    parameters:
+    - $ref: '#/components/parameters/store_location_id'
+    get:
+      operationId: getStoreLocation
+      summary: Get a store location
+      tags:
+      - Store Locations
+      x-commons-tier: core
+      x-commons-share: 0.818
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateStoreLocation
+      summary: Update a store location
+      tags:
+      - Store Locations
+      x-commons-tier: core
+      x-commons-share: 0.545
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    delete:
+      operationId: deleteStoreLocation
+      summary: Delete a store location
+      tags:
+      - Store Locations
+      x-commons-tier: extended
+      x-commons-share: 0.364
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /terminals:
+    get:
+      operationId: listTerminals
+      summary: List terminals
+      tags:
+      - Terminals
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Terminal'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createTerminal
+      summary: Create a terminal
+      tags:
+      - Terminals
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /terminals/{terminal_id}:
+    parameters:
+    - $ref: '#/components/parameters/terminal_id'
+    get:
+      operationId: getTerminal
+      summary: Get a terminal
+      tags:
+      - Terminals
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /sales:
+    get:
+      operationId: listSales
+      summary: List sales
+      tags:
+      - Sales
+      x-commons-tier: core
+      x-commons-share: 0.65
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Sale'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createSale
+      summary: Create a sale
+      tags:
+      - Sales
+      x-commons-tier: extended
+      x-commons-share: 0.35
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /sales/{sale_id}:
+    parameters:
+    - $ref: '#/components/parameters/sale_id'
+    get:
+      operationId: getSale
+      summary: Get a sale
+      tags:
+      - Sales
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /shifts:
+    get:
+      operationId: listShifts
+      summary: List shifts
+      tags:
+      - Shifts
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Shift'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+components:
+  schemas:
+    StoreLocation:
+      $ref: ./schema/store_location.json
+    Terminal:
+      $ref: ./schema/terminal.json
+    Sale:
+      $ref: ./schema/sale.json
+    Shift:
+      $ref: ./schema/shift.json
+  parameters:
+    store_location_id:
+      name: store_location_id
+      in: path
+      required: true
+      schema:
+        type: string
+    terminal_id:
+      name: terminal_id
+      in: path
+      required: true
+      schema:
+        type: string
+    sale_id:
+      name: sale_id
+      in: path
+      required: true
+      schema:
+        type: string
+    shift_id:
+      name: shift_id
+      in: path
+      required: true
+      schema:
+        type: string

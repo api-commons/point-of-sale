@@ -1,0 +1,28 @@
+provider: aramark
+apis_io: https://apis.io/providers/aramark/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  sale:
+    path_segment:
+    - checks
+    - receipts
+    - sales
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/aramark-point-sale-openapi.json#GET /transactions/checks/{org_value}
+    - openapi/_original/aramark-point-sale.json#GET /transactions/checks/{org_value}
+    - openapi/_original/aramark-pos-daily-sales-openapi.json#GET /sales/{org_value}
+    - openapi/_original/aramark-pos-daily-sales.json#GET /sales/{org_value}
+    - openapi/_original/aramark-pos-transactions-openapi.json#GET /transactions/checks/{org_value}
+  shift:
+    path_segment:
+    - shifts
+    properties:
+      status: status
+    core_coverage: 0.143
+    evidence:
+    - openapi/_original/aramark-labor-schedule-openapi.yaml#GET /employee/shifts
+    - openapi/_original/aramark-labor-schedule.yaml#GET /employee/shifts

@@ -1,0 +1,3138 @@
+{
+ "cohort_size": 84,
+ "unreadable": [],
+ "concepts": {
+  "store_location": {
+   "adyen": {
+    "segments": [
+     "stores"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "_links": "object",
+     "address": "object",
+     "businessLineIds": "array",
+     "description": "string",
+     "externalReferenceId": "string",
+     "id": "string",
+     "merchantId": "string",
+     "phoneNumber": "string",
+     "reference": "string",
+     "shopperStatement": "string",
+     "splitConfiguration": "object",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/management-openapi-original.yml#GET /merchants/{merchantId}/stores",
+     "openapi/_original/management-openapi-original.yml#GET /merchants/{merchantId}/stores/{storeId}",
+     "openapi/_original/management-openapi-original.yml#GET /stores",
+     "openapi/_original/management-openapi-original.yml#GET /stores/{storeId}",
+     "openapi/_original/management-openapi-original.yml#PATCH /merchants/{merchantId}/stores/{storeId}",
+     "openapi/_original/management-openapi-original.yml#PATCH /stores/{storeId}",
+     "openapi/_original/management-openapi-original.yml#POST /merchants/{merchantId}/stores",
+     "openapi/_original/management-openapi-original.yml#POST /stores"
+    ]
+   },
+   "agendapro": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "uuid": "string",
+     "name": "string",
+     "active": "boolean",
+     "address": "object",
+     "phone": "string",
+     "email": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "timezone": "string",
+     "image": "object",
+     "image_map": "string",
+     "company_id": "integer",
+     "company": "object",
+     "country": "object",
+     "country_id": "integer",
+     "times": "array",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/agendapro-connect-v3-openapi.yml#GET /v3/locations",
+     "openapi/_original/agendapro-connect-v3-openapi.yml#GET /v3/locations/{id}",
+     "openapi/_original/platform-connect-v3.json#GET /v3/locations",
+     "openapi/_original/platform-connect-v3.json#GET /v3/locations/{id}"
+    ]
+   },
+   "block": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "address": "object",
+     "timezone": "string",
+     "capabilities": "array",
+     "status": "string",
+     "created_at": "string",
+     "merchant_id": "string",
+     "country": "string",
+     "language_code": "string",
+     "currency": "string",
+     "phone_number": "string",
+     "business_name": "string",
+     "type": "string",
+     "website_url": "string",
+     "business_hours": "object",
+     "business_email": "string",
+     "description": "string",
+     "twitter_username": "string",
+     "instagram_username": "string",
+     "facebook_url": "string",
+     "coordinates": "object",
+     "logo_url": "string",
+     "pos_background_url": "string",
+     "mcc": "string",
+     "full_format_logo_url": "string",
+     "tax_ids": "object",
+     "custom_receipt_text": "string",
+     "return_policy": "string"
+    },
+    "evidence": [
+     "openapi/_original/block-openapi.json#GET /v2/locations",
+     "openapi/_original/block-openapi.json#GET /v2/locations/{location_id}",
+     "openapi/_original/block-openapi.json#POST /v2/locations",
+     "openapi/_original/block-openapi.json#PUT /v2/locations/{location_id}"
+    ]
+   },
+   "caseys-general-stores": {
+    "segments": [
+     "stores",
+     "store"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "storeNumber": "integer",
+     "storeName": "string",
+     "storeShortName": "string",
+     "timeZone": "string",
+     "longitude": "number",
+     "latitude": "number",
+     "street": "string",
+     "cityId": "integer",
+     "cityName": "string",
+     "stateId": "integer",
+     "stateAbbreviation": "string",
+     "countyId": "integer",
+     "countyName": "string",
+     "zipCode": "string",
+     "poBox": "string",
+     "status": "string",
+     "statusId": "integer",
+     "phone": "integer",
+     "orderPhone": "integer",
+     "hasATM": "boolean",
+     "hasBakery": "boolean",
+     "sellsAlcohol": "boolean",
+     "sellsTobacco": "boolean",
+     "sellsDiesel": "boolean",
+     "sellsDonuts": "boolean",
+     "sellsSoftServeIceCream": "boolean",
+     "sellsBreakfastSandwiches": "boolean",
+     "sellsPreparedSandwiches": "boolean",
+     "sellsSignatureSubs": "boolean",
+     "sellsMTOSubs": "boolean",
+     "sellsPizza": "boolean",
+     "sellsNoonPizza": "boolean",
+     "sellsEveningPizza": "boolean",
+     "hasPayAtPump": "boolean",
+     "hasKitchen": "boolean",
+     "hasThirdPartyDelivery": "boolean",
+     "hasCurbsidePickup": "boolean",
+     "hasInStorePickup": "boolean",
+     "style": "string",
+     "floorPlan": "string",
+     "originalOpenDate": "string",
+     "lastOpenDate": "string",
+     "acquisitionName": "string",
+     "isLeftHand": "boolean",
+     "shelvingStyle": "string",
+     "closeDate": "string",
+     "budgetedHours": "integer",
+     "subBarDate": "string",
+     "hasFax": "boolean",
+     "pizzaOpenDate": "string",
+     "deliveryStartDate": "string",
+     "deliveryEndDate": "string",
+     "isLeased": "boolean",
+     "leaseAmount": "number",
+     "hasCarWash": "boolean",
+     "gasBuddyId": "integer",
+     "brandId": "integer",
+     "brandName": "string",
+     "is24Hours": "boolean",
+     "isFirstPartyDelivery": "boolean",
+     "hasOnlineOrdering": "boolean",
+     "loyaltyPrograms": "array",
+     "deliveryVendors": "array",
+     "carWash": "object",
+     "autoAttendantBypassPhoneNumber": "integer",
+     "companyId": "integer",
+     "location": "string",
+     "costCenter": "string",
+     "classification": "string",
+     "corporateCompany": "integer",
+     "businessUnit": "string",
+     "storeTruckStop": "object"
+    },
+    "evidence": [
+     "openapi/_original/caseys-general-stores-old-store-api-openapi.json#GET /store",
+     "openapi/_original/caseys-general-stores-old-store-api-openapi.json#GET /store/{storeNumber}",
+     "openapi/_original/caseys-general-stores-old-store-api-openapi.json#GET /v1/stores",
+     "openapi/_original/caseys-general-stores-old-store-api-openapi.json#GET /v1/stores/{storeNumber}",
+     "openapi/_original/caseys-general-stores-store-api-openapi.json#GET /store",
+     "openapi/_original/caseys-general-stores-store-api-openapi.json#GET /store/{storeNumber}",
+     "openapi/_original/caseys-general-stores-store-api-openapi.json#GET /v1/stores",
+     "openapi/_original/caseys-general-stores-store-api-openapi.json#GET /v1/stores/{storeNumber}",
+     "openapi/_original/caseys-general-stores-store-details-api-openapi.json#GET /v1/stores",
+     "openapi/_original/caseys-general-stores-store-details-api-openapi.json#GET /v1/stores/{storeNumber}"
+    ]
+   },
+   "crm-bonus": {
+    "segments": [
+     "stores"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "success": null,
+     "requestId": null,
+     "id": "string",
+     "name": "string",
+     "name_oto": null,
+     "type": null,
+     "email": null,
+     "cluster": null,
+     "country": null,
+     "state": null,
+     "city": null,
+     "status": null,
+     "store_vtex": null,
+     "cnpj": null,
+     "identity": null,
+     "ecommerce_id": null,
+     "custom_field_01": null,
+     "custom_field_02": null,
+     "custom_field_03": null,
+     "custom_field_04": null,
+     "custom_field_05": null,
+     "custom_field_06": null,
+     "custom_field_07": null,
+     "custom_field_08": null,
+     "custom_field_09": null,
+     "custom_field_10": null
+    },
+    "evidence": [
+     "openapi/_original/crm-bonus-oto-data-api-openapi.json#POST /v1/stores",
+     "openapi/_original/crm-bonus-oto-data-api-openapi.yml#POST /v1/stores"
+    ]
+   },
+   "erply": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "added": "integer",
+     "addedby": "string",
+     "changed": "integer",
+     "changedby": "string",
+     "id": "integer",
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/erply-pim-openapi.json#DELETE /v1/warehouse/locations/{ids}",
+     "openapi/_original/erply-pim-openapi.json#GET /v1/warehouse/locations",
+     "openapi/_original/erply-pim-openapi.json#PATCH /v1/warehouse/locations/{id}",
+     "openapi/_original/erply-pim-openapi.json#POST /v1/warehouse/locations"
+    ]
+   },
+   "flipdish": {
+    "segments": [
+     "stores",
+     "store",
+     "location"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "Stores": "array",
+     "Data": "object",
+     "Latitude": "number",
+     "Longitude": "number",
+     "StoreId": "integer",
+     "StoreName": "string",
+     "StoreGroupId": "integer",
+     "StoreGroupName": "string",
+     "HasLoyaltyCampaign": "boolean",
+     "HasRetentionCampaign": "boolean",
+     "IsPublished": "boolean",
+     "Name": "string",
+     "Active": "boolean",
+     "PayGreenId": "string",
+     "PayGreenConfigurationId": "integer",
+     "MenuEntityId": "integer",
+     "Key": "string",
+     "Value": "string",
+     "SummaryTotalPayout": "number",
+     "SummaryRevenue": "number",
+     "SummaryCashRevenue": "number",
+     "SummaryTotalFlipdishFees": "number",
+     "SummaryAdjustments": "number",
+     "Currency": "string",
+     "Page": "integer",
+     "Limit": "integer",
+     "TotalRecordCount": "integer",
+     "AppId": "string",
+     "StoreIds": "array",
+     "IsRegistered": "boolean",
+     "PinCode": "integer",
+     "Images": "array",
+     "UserType": "string",
+     "Address": "object",
+     "DeliveryZones": "array",
+     "ApmPhoneNumber": "string",
+     "PickupHours": "array",
+     "DeliveryHours": "array",
+     "MenuId": "integer",
+     "OrderConfirmationMessageOverrideDelivery": "string",
+     "OrderConfirmationMessageOverridePickup": "string",
+     "PrintoutLayoutType": "string",
+     "StoreNotes": "array",
+     "MicrosoftTimeZone": "string",
+     "IanaTimeZone": "string",
+     "PreOrderDeliveryEnabled": "boolean",
+     "PreOrderPickupEnabled": "boolean",
+     "LogoUrl": "string",
+     "FraudPreventionStrategy": "string",
+     "AppIds": "array",
+     "PropertyId": "string",
+     "PhoneNumber": "string",
+     "AlwaysAppearOpen": "boolean",
+     "PreOrderEnabled": "boolean",
+     "TakeOutEnabled": "boolean",
+     "TableServiceEnabled": "boolean",
+     "DineInEnabled": "boolean",
+     "AllowPreOrdersAndTableService": "boolean",
+     "PickupEnabled": "boolean",
+     "DeliveryEnabled": "boolean",
+     "CardOrderDeliveryEnabled": "boolean",
+     "CashOrdersDeliveryEnabled": "boolean",
+     "CardOrdersPickupEnabled": "boolean",
+     "CashOrdersPickupEnabled": "boolean",
+     "TipsEnabled": "boolean",
+     "AutomaticallyAcceptOrders": "boolean",
+     "OpenForDelivery": "boolean",
+     "OpenForPickup": "boolean",
+     "MinimumPickupOrderAmount": "number",
+     "RequireCustomerNameForPickup": "boolean",
+     "GdprCustomerPhoneNumbers": "boolean",
+     "RequireCustomerNameForDelivery": "boolean",
+     "AllowChefNotes": "boolean",
+     "EtaInPickupConfirmationSmsEnabled": "boolean",
+     "EtaInDeliveryConfirmationSmsEnabled": "boolean",
+     "IsArchived": "boolean",
+     "EmailAddress": "string",
+     "StaffLanguage": "string",
+     "SalesChannelTypes": "array",
+     "InheritanceConfigTypes": "array"
+    },
+    "evidence": [
+     "openapi/_original/flipdish-apps-openapi.json#DELETE /api/v1.0/{appId}/channels/{channelId}/stores",
+     "openapi/_original/flipdish-apps-openapi.json#DELETE /api/v1.0/{appId}/channels/{channelId}/stores/{storeId}",
+     "openapi/_original/flipdish-apps-openapi.json#GET /api/v1.0/{appId}/channels/{channelId}/stores",
+     "openapi/_original/flipdish-apps-openapi.json#POST /api/v1.0/{appId}/channels/{channelId}/stores/{storeId}",
+     "openapi/_original/flipdish-devices-openapi.json#POST /api/v1.0/{appId}/stripeterminal/location",
+     "openapi/_original/flipdish-marketing-openapi.json#GET /api/v1.0/{appId}/campaigns/stores",
+     "openapi/_original/flipdish-marketing-openapi.json#GET /api/v1.0/{appId}/restaurant-vouchers/paygreen/stores",
+     "openapi/_original/flipdish-marketing-openapi.json#GET /api/v1.0/{appId}/restaurant-vouchers/paygreen/stores/{storeId}",
+     "openapi/_original/flipdish-marketing-openapi.json#POST /api/v1.0/{appId}/restaurant-vouchers/paygreen/stores/{storeId}",
+     "openapi/_original/flipdish-menus-openapi.json#DELETE /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/{key}/store/{storeId}",
+     "openapi/_original/flipdish-menus-openapi.json#GET /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/store/{storeId}",
+     "openapi/_original/flipdish-menus-openapi.json#GET /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/{key}/store/{storeId}"
+    ]
+   },
+   "happy-cabbage-analytics": {
+    "segments": [
+     "stores",
+     "store"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "id": "string",
+     "type": "string",
+     "createdAt": "string",
+     "stateCode": "string",
+     "fulfilledById": "string",
+     "fulfilledByStoreName": "string"
+    },
+    "evidence": [
+     "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.json#DELETE /external/v1/orders/{orderId}/items/{itemId}/store/{storeId}",
+     "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.json#GET /external/v1/inventory-health/stores",
+     "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.json#GET /external/v1/stores",
+     "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.yml#DELETE /external/v1/orders/{orderId}/items/{itemId}/store/{storeId}",
+     "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.yml#GET /external/v1/inventory-health/stores",
+     "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.yml#GET /external/v1/stores"
+    ]
+   },
+   "incentivio": {
+    "segments": [
+     "stores",
+     "locations",
+     "location"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "clientId": "string",
+     "locations": "array",
+     "catalogOverrides": "array",
+     "catering": "boolean",
+     "charges": "array",
+     "countryCode": "string",
+     "currencyCode": "string",
+     "deliveryArea": "object",
+     "deliveryAsapSupported": "boolean",
+     "deliveryAvailabilityInterval": "integer",
+     "deliveryMaxDaysOut": "integer",
+     "deliveryOffDays": "array",
+     "deliveryOrderHours": "array",
+     "deliveryOrderNoticePeriod": "integer",
+     "deliveryOrderOptions": "array",
+     "deliveryOrderProcessingTime": "integer",
+     "deliveryOrdersAccepted": "boolean",
+     "deliveryOrderValueLimits": "object",
+     "deliveryRadius": "number",
+     "deliverySevenPlusDaysOrdering": "boolean",
+     "deliveryTemporaryHours": "array",
+     "disableTipping": "boolean",
+     "dynamicDeliveryCharge": "object",
+     "enableFulFillTextForToast": "boolean",
+     "extendedAttributes": "object",
+     "externalOrderingEnabled": "boolean",
+     "externalOrderingText": "string",
+     "extPosLocationId": "string",
+     "failureNotificationRecipientEmailList": "array",
+     "fulFillTextForToast": "string",
+     "groupOverrides": "array",
+     "kitchenThrottleConfig": "object",
+     "latitude": "number",
+     "locationName": "string",
+     "longitude": "number",
+     "menuImportConfig": "object",
+     "merchantId": "string",
+     "orderNotificationRecipientEmailList": "array",
+     "orderProcessingConfig": "object",
+     "orderThrottleConfig": "array",
+     "paymentConfigs": "array",
+     "paymentGatewayConfig": "object",
+     "pickupAsapSupported": "boolean",
+     "pickupAvailabilityInterval": "integer",
+     "pickupMaxDaysOut": "integer",
+     "pickupOffDays": "array",
+     "pickupOrderHours": "array",
+     "pickupOrderNoticePeriod": "integer",
+     "pickupOrderOptions": "array",
+     "pickupOrderProcessingTime": "integer",
+     "pickupOrdersAccepted": "boolean",
+     "pickupOrderValueLimits": "object",
+     "pickupSevenPlusDaysOrdering": "boolean",
+     "pickupTemporaryHours": "array",
+     "primaryLocation": "boolean",
+     "primaryLocationId": "string",
+     "qalocation": "boolean",
+     "showDeliveryTimeSlots": "boolean",
+     "showPickupTimeSlots": "boolean",
+     "taxes": "array",
+     "test": "boolean",
+     "timeZone": "string",
+     "patchData": "array",
+     "title": "string",
+     "address": "object",
+     "phoneNumber": "string",
+     "shortDescription": "string",
+     "longDescription": "string",
+     "regionId": "string",
+     "storeType": "string",
+     "beaconId": "string",
+     "smallImage": "string",
+     "mediumImage": "string",
+     "displayInfo": "array",
+     "isCatering": "boolean",
+     "isMenuBrowsing": "boolean",
+     "viewOnlyLocationEnabled": "boolean",
+     "isTest": "boolean",
+     "regionEmpty": "boolean",
+     "locationId": "string",
+     "active": "boolean",
+     "extTargetingId": "string",
+     "productType": "string",
+     "paging": "object",
+     "stores": "array"
+    },
+    "evidence": [
+     "openapi/_original/incentivio-admin-api-openapi.json#DELETE /incentivio-client-domain/clients/{clientid}/merchants/{merchantid}/stores/{storeid}",
+     "openapi/_original/incentivio-admin-api-openapi.json#DELETE /incentivio-ordering-service/locations/{locationid}",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/admin/stores",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/clients/all/stores",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/clients/{clientid}/all/stores",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/clients/{clientid}/merchants/{merchantid}/admins/{adminid}/stores",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/clients/{clientid}/merchants/{merchantid}/stores",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/clients/{clientid}/merchants/{merchantid}/stores/{identifier}",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/clients/{clientid}/stores",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/clients/{clientid}/stores/{identifier}",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-menu-service/search/locations",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-ordering-service/locations/{locationid}"
+    ]
+   },
+   "lightspeed": {
+    "segments": [
+     "outlets",
+     "outlet"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "attributes": "array",
+     "currency": "string",
+     "currency_symbol": "string",
+     "default_tax_id": "string",
+     "deleted_at": "string",
+     "display_prices": "string",
+     "email": "string",
+     "id": "string",
+     "latitude": "string",
+     "longitude": "string",
+     "name": "string",
+     "phone": "string",
+     "physical_address_1": "string",
+     "physical_address_2": "string",
+     "physical_city": "string",
+     "physical_country_id": "string",
+     "physical_postcode": "string",
+     "physical_state": "string",
+     "physical_suburb": "string",
+     "time_zone": "string",
+     "version": "integer",
+     "date": "string",
+     "minutes_scheduled": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /outlets",
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /outlets/{outlet_id}",
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /services_agenda/outlet/{outlet_id}"
+    ]
+   },
+   "lokki": {
+    "segments": [
+     "stores",
+     "shop",
+     "store"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "slug": "string",
+     "rentalPointSlug": "string",
+     "profile": null,
+     "localization": null,
+     "contact": null,
+     "branding": null,
+     "geo": null,
+     "modules": null,
+     "reviews": null,
+     "temporal": null,
+     "pricing": null,
+     "booking": null,
+     "checkout": null,
+     "metadata": null,
+     "marketing": null,
+     "companies": "array",
+     "totalCount": "number",
+     "addressComponents": "object",
+     "companyType": "string",
+     "name": "string",
+     "logo": "string",
+     "banner": "array",
+     "description": "string",
+     "currency": "string",
+     "address": "string",
+     "lat": "number",
+     "lng": "number",
+     "rentalPlaceInfos": "object",
+     "googleRating": "number",
+     "googleReviews": "array",
+     "googleReviewsNb": "number",
+     "showcaseProducts": "array",
+     "verticales": "array",
+     "universes": "array",
+     "total": "number",
+     "docs": "array",
+     "logoURL": "string",
+     "bannerURL": "array",
+     "pageUrl": "string",
+     "distance": "number"
+    },
+    "evidence": [
+     "openapi/_original/lokki-dashboard-api-openapi.json#GET /v2/external/stores",
+     "openapi/_original/lokki-dashboard-api-openapi.json#GET /v2/external/stores/{id}",
+     "openapi/_original/lokki-dashboard-api-openapi.json#GET /v2/rental-place/store/{slug}",
+     "openapi/_original/lokki-dashboard-api-openapi.json#GET /v2/rental-place/stores",
+     "openapi/_original/lokki-dashboard-api-openapi.json#GET /v2/shop/{slug}",
+     "openapi/_original/lokki-external-api-openapi.json#GET /v2/external/stores",
+     "openapi/_original/lokki-external-api-openapi.json#GET /v2/external/stores/{id}"
+    ]
+   },
+   "mercado-pago": {
+    "segments": [
+     "stores"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/mercado-pago-openapi.yml#DELETE /v1/stores/{id}",
+     "openapi/_original/mercado-pago-openapi.yml#GET /v1/stores",
+     "openapi/_original/mercado-pago-openapi.yml#GET /v1/stores/{id}",
+     "openapi/_original/mercado-pago-openapi.yml#POST /v1/stores",
+     "openapi/_original/mercado-pago-openapi.yml#PUT /v1/stores/{id}"
+    ]
+   },
+   "mindbody": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "PaginationResponse": "object",
+     "Locations": "array"
+    },
+    "evidence": [
+     "openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/site/locations"
+    ]
+   },
+   "newstore": {
+    "segments": [
+     "stores"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "cashboxes": "array",
+     "config": "object",
+     "country_code": "string",
+     "description": "string",
+     "id": "string",
+     "multi_cashbox": "boolean",
+     "tenant": "string",
+     "avalara": "object",
+     "created_at": "string",
+     "custom": "object",
+     "fixed_rate": "object",
+     "fixed_rate_per_country": "object",
+     "is_deleted": "boolean",
+     "store_id": "string",
+     "tax_calculation_strategy": "string",
+     "updated_at": "string",
+     "updated_by": "string",
+     "version": "integer",
+     "vertex": "object"
+    },
+    "evidence": [
+     "openapi/_original/newstore-api-openapi-original.json#DELETE /taxes/config/stores/{id}",
+     "openapi/_original/newstore-api-openapi-original.json#GET /stores",
+     "openapi/_original/newstore-api-openapi-original.json#GET /stores/{storeId}",
+     "openapi/_original/newstore-api-openapi-original.json#GET /taxes/config/stores",
+     "openapi/_original/newstore-api-openapi-original.json#GET /taxes/config/stores/{id}",
+     "openapi/_original/newstore-api-openapi-original.json#PATCH /stores/{storeId}",
+     "openapi/_original/newstore-api-openapi-original.json#PATCH /taxes/config/stores/{id}",
+     "openapi/_original/newstore-api-openapi-original.json#POST /taxes/config/stores"
+    ]
+   },
+   "northmill": {
+    "segments": [
+     "locations",
+     "stores"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "ExtraInformation": "array",
+     "list": "array",
+     "Page": "integer",
+     "Total": "integer",
+     "PageSize": "integer",
+     "Name": "string",
+     "UpdateOnExisting": "boolean",
+     "Id": "string",
+     "CreatedUtc": "string",
+     "ModifiedUtc": "string",
+     "Location": "object",
+     "Success": "boolean",
+     "Store": "object",
+     "ExternalStoreId": "integer",
+     "CompanyName": "string",
+     "PublicCompanyName": "string",
+     "StartDate": "string",
+     "ValidTo": "string",
+     "UsernamePrefix": "string",
+     "Country": "string",
+     "IsActive": "boolean",
+     "CurrencyCode": "string",
+     "SMSSenderName": "string",
+     "OrganizationNumber": "string",
+     "Address1": "string",
+     "Address2": "string",
+     "PostCode": "string",
+     "City": "string",
+     "PublicEmail": "string",
+     "PublicPhone": "string",
+     "PublicFax": "string",
+     "ContactPerson": "string",
+     "Phone": "string",
+     "CellPhone": "string",
+     "Email": "string"
+    },
+    "evidence": [
+     "openapi/_original/northmill-flo-api-swagger.json#DELETE /v2/locations/{Id}",
+     "openapi/_original/northmill-flo-api-swagger.json#GET /v2/locations",
+     "openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores",
+     "openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores/{externalStoreId}",
+     "openapi/_original/northmill-flo-api-swagger.json#POST /v2/locations",
+     "openapi/_original/northmill-flo-api-swagger.json#POST /v2/stores",
+     "openapi/_original/northmill-flo-api-swagger.json#PUT /v2/locations",
+     "openapi/_original/northmill-flo-api-swagger.json#PUT /v2/stores/{externalStoreId}"
+    ]
+   },
+   "punchh": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "address": "string",
+     "brand": "string",
+     "city": "string",
+     "country": "string",
+     "external_store_id": "string",
+     "latitude": "number",
+     "location_id": "integer",
+     "longitude": "number",
+     "name": "string",
+     "online_order_url": "string",
+     "phone_number": "string",
+     "loc_email": "string",
+     "post_code": "string",
+     "state": "string",
+     "store_number": "string",
+     "store_tags": "string",
+     "store_times": "array",
+     "time_zone": "string",
+     "updated_at": "string",
+     "status": "string",
+     "franchisee_id": "integer",
+     "enable_weekly_redemption_report": "boolean",
+     "checkin_evidenced_by": "string",
+     "guest_identity_code_type": "string",
+     "enable_pos_monitoring": "boolean",
+     "generate_barcodes": "boolean",
+     "location_groups": "array",
+     "alternate_store_number": "string",
+     "additional_url": "array",
+     "multiple_redemption_on_location": "boolean",
+     "location_extra_attributes": "object",
+     "validation_type": "string",
+     "ncr_store_id": "string",
+     "location": "object"
+    },
+    "evidence": [
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#DELETE /api2/dashboard/locations",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#GET /api2/dashboard/locations",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#PATCH /api2/dashboard/locations",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#POST /api2/dashboard/locations"
+    ]
+   },
+   "shopify": {
+    "segments": [
+     "locations",
+     "shop"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "address1": [
+      "string",
+      "null"
+     ],
+     "address2": [
+      "string",
+      "null"
+     ],
+     "city": [
+      "string",
+      "null"
+     ],
+     "province": [
+      "string",
+      "null"
+     ],
+     "province_code": [
+      "string",
+      "null"
+     ],
+     "country": [
+      "string",
+      "null"
+     ],
+     "country_code": "string",
+     "zip": [
+      "string",
+      "null"
+     ],
+     "phone": [
+      "string",
+      "null"
+     ],
+     "active": "boolean",
+     "legacy": "boolean",
+     "localized_country_name": "string",
+     "localized_province_name": [
+      "string",
+      "null"
+     ],
+     "created_at": "string",
+     "updated_at": "string",
+     "admin_graphql_api_id": "string",
+     "email": "string",
+     "domain": "string",
+     "myshopify_domain": "string",
+     "shop_owner": "string",
+     "country_name": "string",
+     "currency": "string",
+     "money_format": "string",
+     "timezone": "string",
+     "iana_timezone": "string",
+     "plan_name": "string",
+     "plan_display_name": "string",
+     "weight_unit": "string",
+     "primary_locale": "string"
+    },
+    "evidence": [
+     "openapi/_original/shopify-admin-rest-api-openapi.yml#GET /locations.json",
+     "openapi/_original/shopify-admin-rest-api-openapi.yml#GET /locations/{location_id}.json",
+     "openapi/_original/shopify-admin-rest-api-openapi.yml#GET /shop.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-01/locations.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-01/locations/{location_id}.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-01/shop.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-04/locations.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-04/locations/{location_id}.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-04/shop.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-07/locations.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-07/locations/{location_id}.json",
+     "openapi/_original/shopify-api-openapi.yml#GET /admin/api/2020-07/shop.json"
+    ]
+   },
+   "square": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "address": "object",
+     "timezone": "string",
+     "capabilities": "array",
+     "status": "string",
+     "created_at": "string",
+     "merchant_id": "string",
+     "country": "string",
+     "language_code": "string",
+     "currency": "string",
+     "phone_number": "string",
+     "business_name": "string",
+     "type": "string",
+     "website_url": "string",
+     "business_hours": "object",
+     "business_email": "string",
+     "description": "string",
+     "twitter_username": "string",
+     "instagram_username": "string",
+     "facebook_url": "string",
+     "coordinates": "object",
+     "logo_url": "string",
+     "pos_background_url": "string",
+     "mcc": "string",
+     "full_format_logo_url": "string",
+     "tax_ids": "object"
+    },
+    "evidence": [
+     "openapi/_original/square-openapi.yml#GET /v2/locations",
+     "openapi/_original/square-openapi.yml#GET /v2/locations/{location_id}",
+     "openapi/_original/square-openapi.yml#POST /v2/locations",
+     "openapi/_original/square-openapi.yml#PUT /v2/locations/{location_id}"
+    ]
+   },
+   "stripe": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "address": null,
+     "configuration_overrides": "string",
+     "display_name": "string",
+     "id": "string",
+     "livemode": "boolean",
+     "metadata": "object",
+     "object": "string",
+     "deleted": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/terminal-openapi-original.yml#DELETE /v1/terminal/locations/{location}",
+     "openapi/_original/terminal-openapi-original.yml#GET /v1/terminal/locations",
+     "openapi/_original/terminal-openapi-original.yml#GET /v1/terminal/locations/{location}",
+     "openapi/_original/terminal-openapi-original.yml#POST /v1/terminal/locations",
+     "openapi/_original/terminal-openapi-original.yml#POST /v1/terminal/locations/{location}"
+    ]
+   },
+   "switstack": {
+    "segments": [
+     "stores"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": null,
+     "merchant_id": "string",
+     "id": "string",
+     "organization_id": "string",
+     "address": null
+    },
+    "evidence": [
+     "openapi/_original/switstack-switcloud-openapi.json#DELETE /api/bom/stores/{id}",
+     "openapi/_original/switstack-switcloud-openapi.json#GET /api/bom/stores",
+     "openapi/_original/switstack-switcloud-openapi.json#GET /api/bom/stores/{id}",
+     "openapi/_original/switstack-switcloud-openapi.json#PATCH /api/bom/stores/{id}",
+     "openapi/_original/switstack-switcloud-openapi.json#POST /api/bom/stores",
+     "openapi/_original/switstack-switcloud-openapi.json#PUT /api/bom/stores/{id}",
+     "openapi/_original/switstack-switcloud-openapi.yml#DELETE /api/bom/stores/{id}",
+     "openapi/_original/switstack-switcloud-openapi.yml#GET /api/bom/stores",
+     "openapi/_original/switstack-switcloud-openapi.yml#GET /api/bom/stores/{id}",
+     "openapi/_original/switstack-switcloud-openapi.yml#PATCH /api/bom/stores/{id}",
+     "openapi/_original/switstack-switcloud-openapi.yml#POST /api/bom/stores",
+     "openapi/_original/switstack-switcloud-openapi.yml#PUT /api/bom/stores/{id}"
+    ]
+   },
+   "tablecheck": {
+    "segments": [
+     "shops"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "shops": "array",
+     "pagination": "object",
+     "id": "string",
+     "slug": "string",
+     "name_translations": "object",
+     "alt_name": "string",
+     "location_name_translations": "object",
+     "alt_location_name": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "google_place_ref": "string",
+     "google_place_cid": "string",
+     "country": "string",
+     "currency": "string",
+     "time_zone": "string",
+     "phone": "string",
+     "phone_natl": "string",
+     "homepage_url": "string",
+     "homepage_url_translations": "object",
+     "tablecheck_shop_url": "string",
+     "tablecheck_booking_url": "string",
+     "tags": "array",
+     "cuisines": "array",
+     "budget_lunch": "string",
+     "budget_dinner": "string",
+     "updated_at": "string",
+     "content_title_translations": "object",
+     "content_body_translations": "object",
+     "show_pax_senior": "boolean",
+     "show_pax_child": "boolean",
+     "show_pax_baby": "boolean",
+     "pax_senior_age_min": "number",
+     "pax_child_age_max": "number",
+     "pax_baby_age_max": "number",
+     "service_categories": "array",
+     "address": "object",
+     "alt_address": "object",
+     "images": "array",
+     "image_url": "string",
+     "min_pax": "integer",
+     "max_pax": "integer",
+     "has_smoking": "boolean",
+     "seat_types": "array",
+     "internal_name": "object",
+     "franchise": "object",
+     "franchise_id": "string",
+     "franchise_name_translations": "object",
+     "created_at": "string",
+     "time_interval": "number",
+     "reservation_buffer": "number",
+     "min_time_cutoff": "object",
+     "max_time_cutoff": "object",
+     "duration_rules": "array",
+     "meals": "array",
+     "sheets": "array",
+     "floor_plans": "array"
+    },
+    "evidence": [
+     "openapi/_original/tablecheck-availability.yml#GET /shops",
+     "openapi/_original/tablecheck-availability.yml#GET /shops/{shop_id}",
+     "openapi/_original/tablecheck-booking.yml#GET /shops",
+     "openapi/_original/tablecheck-booking.yml#GET /shops/{shop_id}",
+     "openapi/_original/tablecheck-crm.yml#GET /shops",
+     "openapi/_original/tablecheck-crm.yml#GET /shops/{shop_id}",
+     "openapi/_original/tablecheck-pos.yml#GET /shops",
+     "openapi/_original/tablecheck-pos.yml#GET /shops/{id}",
+     "openapi/_original/tablecheck-site-controller.yml#GET /shops",
+     "openapi/_original/tablecheck-site-controller.yml#GET /shops/{shop_id}"
+    ]
+   },
+   "teya": {
+    "segments": [
+     "stores"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "address": "object",
+     "company_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/teya-poslink-openapi.json#GET /poslink/v1/stores"
+    ]
+   },
+   "tyro": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "locationId": "string",
+     "pos": null,
+     "status": null,
+     "name": "string",
+     "address": "object"
+    },
+    "evidence": [
+     "openapi/_original/tyro-connect-locations.yml#GET /locations/{tcLocationId}",
+     "openapi/_original/tyro-pos-embedded-payments.yml#GET /tap-to-pay/merchants/{merchantId}/locations"
+    ]
+   },
+   "urbanpiper": {
+    "segments": [
+     "stores",
+     "location",
+     "locations"
+    ],
+    "operations": [
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "status": "string",
+     "message": "string",
+     "name": "string",
+     "city": "string",
+     "ref_id": "string",
+     "address": "string",
+     "active": "boolean",
+     "ordering_enabled": "boolean",
+     "included_platforms": "array",
+     "platform_data": "array",
+     "timings": "array",
+     "location_ref_id": "string",
+     "flush_categories": "boolean",
+     "flush_items": "boolean",
+     "flush_options": "boolean",
+     "flush_option_groups": "boolean",
+     "categories": "array",
+     "items": "array",
+     "option_groups": "array",
+     "options": "array",
+     "taxes": "array",
+     "charges": "array"
+    },
+    "evidence": [
+     "openapi/_original/urbanpiper-openapi.yml#POST /external/api/v1/inventory/locations/{location_ref_id}/",
+     "openapi/_original/urbanpiper-openapi.yml#POST /external/api/v1/stores/",
+     "openapi/_original/urbanpiper-openapi.yml#POST /hub/api/v1/location/"
+    ]
+   },
+   "wellnessliving": {
+    "segments": [
+     "location"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "k_location": null
+    },
+    "evidence": [
+     "openapi/_original/wellnessliving-openapi.yml#POST /Wl/Location/Location.json"
+    ]
+   }
+  },
+  "terminal": {
+   "adyen": {
+    "segments": [
+     "terminals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "assignment": "object",
+     "connectivity": "object",
+     "firmwareVersion": "string",
+     "id": "string",
+     "lastActivityAt": "string",
+     "lastTransactionAt": "string",
+     "model": "string",
+     "serialNumber": "string"
+    },
+    "evidence": [
+     "openapi/_original/management-openapi-original.yml#GET /terminals"
+    ]
+   },
+   "dojo": {
+    "segments": [
+     "terminals"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "properties": "object",
+     "status": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/dojo-api.json#GET /terminals",
+     "openapi/_original/dojo-api.json#GET /terminals/{terminalId}"
+    ]
+   },
+   "lightspeed": {
+    "segments": [
+     "registers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "ask_for_note_on_save": "number",
+     "ask_for_user_on_sale": "boolean",
+     "button_layout_id": "string",
+     "cash_managed_payment_type_id": "string",
+     "deleted_at": "string",
+     "email_receipt": "boolean",
+     "id": "string",
+     "invoice_prefix": "string",
+     "invoice_sequence": "number",
+     "invoice_suffix": "string",
+     "is_open": "boolean",
+     "name": "string",
+     "outlet_id": "string",
+     "print_note_on_receipt": "boolean",
+     "print_receipt": "boolean",
+     "receipt_template_id": "string",
+     "register_close_time": "string",
+     "register_open_sequence_id": "string",
+     "register_open_time": "string",
+     "show_discounts_on_receipts": "boolean",
+     "version": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /registers",
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /registers/{register_id}"
+    ]
+   },
+   "paymentsense": {
+    "segments": [
+     "terminals"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "tpi": "string",
+     "status": "string",
+     "currency": "string",
+     "capabilities": "array",
+     "location": "string",
+     "tid": "string"
+    },
+    "evidence": [
+     "openapi/_original/paymentsense-connect-v0.json#GET /retail/terminals",
+     "openapi/_original/paymentsense-connect-v0.json#GET /retail/terminals/{tpi}",
+     "openapi/_original/paymentsense-connect-v1.json#GET /pac/terminals",
+     "openapi/_original/paymentsense-connect-v1.json#GET /pac/terminals/{tpi}",
+     "openapi/_original/paymentsense-connect-v2.json#GET /pac/terminals",
+     "openapi/_original/paymentsense-connect-v2.json#GET /pac/terminals/{tid}"
+    ]
+   },
+   "stripe": {
+    "segments": [
+     "readers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "action": null,
+     "device_sw_version": "string",
+     "device_type": "string",
+     "id": "string",
+     "ip_address": "string",
+     "label": "string",
+     "livemode": "boolean",
+     "location": null,
+     "metadata": "object",
+     "object": "string",
+     "serial_number": "string",
+     "status": "string",
+     "deleted": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/terminal-openapi-original.yml#DELETE /v1/terminal/readers/{reader}",
+     "openapi/_original/terminal-openapi-original.yml#GET /v1/terminal/readers",
+     "openapi/_original/terminal-openapi-original.yml#GET /v1/terminal/readers/{reader}",
+     "openapi/_original/terminal-openapi-original.yml#POST /v1/terminal/readers",
+     "openapi/_original/terminal-openapi-original.yml#POST /v1/terminal/readers/{reader}"
+    ]
+   },
+   "sumup": {
+    "segments": [
+     "readers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "status": "string",
+     "device": "object",
+     "metadata": "object",
+     "service_account_id": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "pairing_code": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yaml#DELETE /v0.1/merchants/{merchant_code}/readers/{reader_id}",
+     "openapi/_original/openapi.yaml#GET /v0.1/merchants/{merchant_code}/readers",
+     "openapi/_original/openapi.yaml#GET /v0.1/merchants/{merchant_code}/readers/{reader_id}",
+     "openapi/_original/openapi.yaml#PATCH /v0.1/merchants/{merchant_code}/readers/{reader_id}",
+     "openapi/_original/openapi.yaml#POST /v0.1/merchants/{merchant_code}/readers"
+    ]
+   },
+   "teya": {
+    "segments": [
+     "terminals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "serial_number": "string",
+     "terminal_id": "string",
+     "terminal_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/teya-poslink-openapi.json#GET /poslink/v1/stores/{store_id}/terminals"
+    ]
+   },
+   "tribe-payments": {
+    "segments": [
+     "terminals"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "externalReferenceId": "string",
+     "serialNumber": "string",
+     "configurationTag": "string",
+     "hostId": "integer",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "deviceId": "integer",
+     "activatedAt": "string",
+     "activationCode": "string"
+    },
+    "evidence": [
+     "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#DELETE /hosts/{hostId}/terminals/{terminalId}",
+     "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /apps/{appId}/terminals/{terminalId}",
+     "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /hosts/{hostId}/terminals",
+     "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /hosts/{hostId}/terminals/{terminalId}",
+     "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /processors/{processorId}/terminals/{terminalId}",
+     "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#POST /hosts/{hostId}/terminals",
+     "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#PUT /hosts/{hostId}/terminals/{terminalId}"
+    ]
+   },
+   "tyro": {
+    "segments": [
+     "readers",
+     "terminals"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "readerId": "string",
+     "locationId": "string",
+     "name": "string",
+     "status": "string",
+     "caid": "string",
+     "tid": "string",
+     "terminalName": "string",
+     "serialNumber": "string"
+    },
+    "evidence": [
+     "openapi/_original/tyro-pos-embedded-payments.yml#GET /tap-to-pay/merchants/{merchantId}/readers",
+     "openapi/_original/tyro-pos-embedded-payments.yml#GET /tap-to-pay/merchants/{merchantId}/readers/{readerId}",
+     "openapi/_original/tyro-pos-embedded-payments.yml#POST /tap-to-pay/merchants/{merchantId}/readers",
+     "openapi/_original/tyro-pos-pay-terminal.yml#GET /pay-terminal/merchants/{merchantId}/terminals"
+    ]
+   }
+  },
+  "sale": {
+   "agendapro": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "cart_id": "integer",
+     "client_id": "integer",
+     "pending_amount": "string",
+     "paid_amount": "string",
+     "status": "string",
+     "paid_at": "string",
+     "location_id": "integer",
+     "location": "object",
+     "transactions": "array",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/agendapro-connect-v3-openapi.yml#GET /v3/sales",
+     "openapi/_original/agendapro-connect-v3-openapi.yml#GET /v3/sales/{id}",
+     "openapi/_original/platform-connect-v3.json#GET /v3/sales",
+     "openapi/_original/platform-connect-v3.json#GET /v3/sales/{id}"
+    ]
+   },
+   "aramark": {
+    "segments": [
+     "checks",
+     "receipts",
+     "sales"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "status": "string",
+     "count": "string",
+     "checks": "array",
+     "pos_sales": "array",
+     "page": "number",
+     "size": "number",
+     "supplier_receipts": "array"
+    },
+    "evidence": [
+     "openapi/_original/aramark-point-sale-openapi.json#GET /transactions/checks/{org_value}",
+     "openapi/_original/aramark-point-sale.json#GET /transactions/checks/{org_value}",
+     "openapi/_original/aramark-pos-daily-sales-openapi.json#GET /sales/{org_value}",
+     "openapi/_original/aramark-pos-daily-sales.json#GET /sales/{org_value}",
+     "openapi/_original/aramark-pos-transactions-openapi.json#GET /transactions/checks/{org_value}",
+     "openapi/_original/aramark-pos-transactions.json#GET /transactions/checks/{org_value}",
+     "openapi/_original/aramark-product-openapi.json#GET /product/supplier/receipts/{org_value}",
+     "openapi/_original/aramark-product-retail-items-openapi.json#GET /supplier/receipts/{org_value}",
+     "openapi/_original/aramark-product-retail-items.json#GET /supplier/receipts/{org_value}",
+     "openapi/_original/aramark-product.json#GET /product/supplier/receipts/{org_value}"
+    ]
+   },
+   "block": {
+    "segments": [
+     "transactions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "location_id": "string",
+     "created_at": "string",
+     "tenders": "array",
+     "refunds": "array",
+     "reference_id": "string",
+     "product": "string",
+     "client_id": "string",
+     "shipping_address": "object",
+     "order_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/block-openapi.json#GET /v2/locations/{location_id}/transactions",
+     "openapi/_original/block-openapi.json#GET /v2/locations/{location_id}/transactions/{transaction_id}"
+    ]
+   },
+   "flipdish": {
+    "segments": [
+     "receipts"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "PreviousOrder": "object",
+     "DepositReturnFeesSummary": "array",
+     "TsRequestedForLocal": "string",
+     "TsOrderPlacedLocal": "string",
+     "LogoUrl": "string",
+     "Address": "string",
+     "VatNumber": "string",
+     "PaymentMethodDescription": "string",
+     "OrgId": "string",
+     "CountryCode": "string"
+    },
+    "evidence": [
+     "openapi/_original/flipdish-payments-openapi.json#GET /api/v1.0/receipts/{orderId}"
+    ]
+   },
+   "flowaccount": {
+    "segments": [
+     "receipts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/flowaccount-openapi-original.json#DELETE /{culture}/receipts/{id}",
+     "openapi/_original/flowaccount-openapi-original.json#GET /{culture}/receipts",
+     "openapi/_original/flowaccount-openapi-original.json#GET /{culture}/receipts/{id}"
+    ]
+   },
+   "fudo": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/fudo-openapi-original.yml#GET /sales",
+     "openapi/_original/fudo-openapi-original.yml#GET /sales/{id}",
+     "openapi/_original/fudo-openapi-original.yml#PATCH /sales/{id}",
+     "openapi/_original/fudo-openapi-original.yml#POST /sales"
+    ]
+   },
+   "green-check-verified": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "pos_sale_id": "string",
+     "crb_id": "string",
+     "subtotal": "number",
+     "total_discounts": "number",
+     "tax_paid": "number",
+     "total_paid": "number",
+     "date": "string",
+     "local_date": "string",
+     "gc_created_date": "string",
+     "gc_updated_date": "string",
+     "transaction_type": "string",
+     "pos_name": "string",
+     "type": "string",
+     "employee_id": "string",
+     "line_items": "array",
+     "discounts": "array",
+     "taxes": "array",
+     "payments": "array",
+     "customer": "object",
+     "fees": "array",
+     "compliance_status": "string",
+     "compliance_exceptions": "array",
+     "compliance_warnings": "array"
+    },
+    "evidence": [
+     "openapi/_original/green-check-verified-access-openapi.yaml#GET /crbs/{crb_id}/sales",
+     "openapi/_original/green-check-verified-access-openapi.yaml#GET /service-providers/{sp_id}/crbs/{crb_id}/sales"
+    ]
+   },
+   "grubhub": {
+    "segments": [
+     "orders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "uuid": "string",
+     "order_merchant_uuid": "string",
+     "merchant_uuid": "string",
+     "order_number": "string",
+     "parent_order_number": "string",
+     "is_test": "boolean",
+     "status": "string",
+     "statusHistory": "array",
+     "updated_at": "object",
+     "merchant_id": "string",
+     "fulfillment_info": "object",
+     "brand": "string",
+     "time_placed": "object",
+     "confirmation_code": "string",
+     "when_for": "string",
+     "restaurant_timezone_id": "object",
+     "payments": "object",
+     "charges": "object",
+     "tax_withheld": "boolean",
+     "catering": "object",
+     "order_filtering_applied": "boolean",
+     "diner_uuid": "array",
+     "jit_enabled": "boolean",
+     "just_in_time_fired": "boolean",
+     "diners": "array",
+     "order_type": "string",
+     "order_taking_system": "string",
+     "handoff_options": "array",
+     "merchant_data": "object",
+     "restaurant_version_id": "object",
+     "affiliate": "object",
+     "fulfillment_scheduling": "string",
+     "cart_version_id": "string",
+     "transmission_id": "string",
+     "metadata": "object",
+     "external_ordering_configs": "object",
+     "gh_plus": "boolean",
+     "gh_plus_diner": "boolean",
+     "external_order_id": "string",
+     "chain_id": "string",
+     "order_merchant_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/grubhub-orders-openapi.yml#GET /pos/v1/group/{group_key}/orders",
+     "openapi/_original/grubhub-orders-openapi.yml#GET /pos/v1/merchant/{merchant_long_id}/orders",
+     "openapi/_original/grubhub-orders-openapi.yml#GET /pos/v1/merchant/{merchant_long_id}/orders/{order_uuid}"
+    ]
+   },
+   "lightspeed": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "sales": "array",
+     "nextPageToken": "string",
+     "_metadata": "object",
+     "adjustments": "array",
+     "attributes": "array",
+     "created_at": "string",
+     "customer_id": "string",
+     "date": "string",
+     "deleted_at": "string",
+     "ecom_custom_charges": "array",
+     "external_applications": "array",
+     "id": "string",
+     "invoice_number": "string",
+     "line_items": "array",
+     "note": "string",
+     "payments": "array",
+     "receipt_number": "string",
+     "return": "object",
+     "short_code": "string",
+     "source": "object",
+     "state": "string",
+     "taxes": "array",
+     "totals": "object",
+     "updated_at": "string",
+     "accounts_transaction_id": "string",
+     "fulfillment_details": "array",
+     "fulfillment_outlet_id": "string",
+     "pricing": "object",
+     "service_fields": "object"
+    },
+    "evidence": [
+     "openapi/_original/lightspeed-k-series-openapi.json#GET /f/v2/business-location/{businessLocationId}/sales",
+     "openapi/_original/lightspeed-k-series-openapi.yml#GET /f/v2/business-location/{businessLocationId}/sales",
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /sales",
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /sales/{sale_id}",
+     "openapi/_original/lightspeed-x-series-openapi.json#POST /sales",
+     "openapi/_original/lightspeed-x-series-openapi.json#PUT /sales/{sale_id}"
+    ]
+   },
+   "lightspeed-pos": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "outlet_id": "string",
+     "register_id": "string",
+     "user_id": "string",
+     "customer_id": "string",
+     "status": "string",
+     "total_price": "number",
+     "total_tax": "number",
+     "line_items": "array"
+    },
+    "evidence": [
+     "openapi/_original/lightspeed-pos-retail-x-series-openapi.yml#GET /sales",
+     "openapi/_original/lightspeed-pos-retail-x-series-openapi.yml#GET /sales/{id}",
+     "openapi/_original/lightspeed-pos-retail-x-series-openapi.yml#POST /sales"
+    ]
+   },
+   "mercado-pago": {
+    "segments": [
+     "orders"
+    ],
+    "operations": [
+     "DELETE collection",
+     "PUT collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/mercado-pago-openapi.yml#DELETE /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders",
+     "openapi/_original/mercado-pago-openapi.yml#PUT /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders"
+    ]
+   },
+   "mindbody": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "PaginationResponse": "object",
+     "Sales": "array"
+    },
+    "evidence": [
+     "openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/sale/sales"
+    ]
+   },
+   "newstore": {
+    "segments": [
+     "checks"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/newstore-api-openapi-original.json#GET /fulfillment/configurations/shipments/checks"
+    ]
+   },
+   "northmill": {
+    "segments": [
+     "receipts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "Receipt": "object",
+     "Id": "string",
+     "Success": "boolean",
+     "ExtraInformation": "array",
+     "list": "array",
+     "Page": "integer",
+     "Total": "integer",
+     "PageSize": "integer",
+     "ReceiptNumber": "integer",
+     "Origin": "string",
+     "ReceiptType": "string",
+     "InternalNote": "string",
+     "TransactionDate": "string",
+     "CashierName": "string",
+     "TotalPriceIncVat": "number",
+     "TotalPriceExVat": "number",
+     "TotalVat": "number",
+     "DoStockMgmt": "boolean",
+     "Merchant": "object",
+     "Rounding": "object",
+     "ControlUnit": "object",
+     "Customers": "array",
+     "Articles": "array",
+     "Payments": "array",
+     "Vat": "array",
+     "Orders": "array",
+     "Discounts": "array",
+     "Recipients": "array",
+     "TextRows": "array",
+     "ClientDetails": "object",
+     "Voucher": "object"
+    },
+    "evidence": [
+     "openapi/_original/northmill-flo-api-swagger.json#GET /v2/receipts",
+     "openapi/_original/northmill-flo-api-swagger.json#GET /v2/receipts/{id}",
+     "openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores/{externalStoreId}/receipts",
+     "openapi/_original/northmill-flo-api-swagger.json#GET /v2/stores/{externalStoreId}/receipts/{id}",
+     "openapi/_original/northmill-flo-api-swagger.json#POST /v2/receipts",
+     "openapi/_original/northmill-flo-api-swagger.json#POST /v2/stores/{externalStoreId}/receipts"
+    ]
+   },
+   "punchh": {
+    "segments": [
+     "transactions"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "anniversary": "string",
+     "avatar_remote_url": "string",
+     "birthday": "string",
+     "created_at": "string",
+     "email": "string",
+     "fb_uid": "string",
+     "first_name": "string",
+     "gender": "string",
+     "id": "integer",
+     "last_name": "string",
+     "updated_at": "string",
+     "balance": "object",
+     "address_line1": "string",
+     "zip_code": "string",
+     "phone": "string",
+     "rewards": "array",
+     "receipt_amount": "number",
+     "subtotal_amount": "number",
+     "receipt_datetime": "string",
+     "sequence_no": "integer",
+     "punchh_key": "string",
+     "transaction_no": "integer",
+     "channel": "string",
+     "revenue_id": "string",
+     "revenue_code": "string",
+     "employee_id": "string",
+     "employee_name": "string",
+     "payable": "number",
+     "menu_items": "array",
+     "card_number": "string",
+     "user_as_qrcode": "string",
+     "single_scan_code": "string",
+     "amount": "number",
+     "cc_last4": "integer",
+     "external_uid": "string"
+    },
+    "evidence": [
+     "openapi/_original/punchh-pos-api-openapi.yml#POST /api/pos/transactions"
+    ]
+   },
+   "ready2order": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "error": "boolean",
+     "success": "boolean",
+     "msg": "string",
+     "jobStatus_id": "integer",
+     "month": "integer",
+     "year": "integer",
+     "filter": "array"
+    },
+    "evidence": [
+     "openapi/_original/ready2order-openapi-original.json#POST /export/sales"
+    ]
+   },
+   "roomkeypms": {
+    "segments": [
+     "receipts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "transactionId": "string",
+     "transactionTime": "string",
+     "amount": "number",
+     "details": "string",
+     "reservationUniqueId": "array"
+    },
+    "evidence": [
+     "openapi/_original/roomkeypms-openapi.yml#GET /hotels/{hotelId}/statistics/receipts"
+    ]
+   },
+   "square": {
+    "segments": [
+     "transactions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "location_id": "string",
+     "created_at": "string",
+     "tenders": "array",
+     "refunds": "array",
+     "reference_id": "string",
+     "product": "string",
+     "client_id": "string",
+     "shipping_address": "object",
+     "order_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/square-openapi.yml#GET /v2/locations/{location_id}/transactions",
+     "openapi/_original/square-openapi.yml#GET /v2/locations/{location_id}/transactions/{transaction_id}"
+    ]
+   },
+   "sumup": {
+    "segments": [
+     "receipts"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "transaction_data": "object",
+     "merchant_data": "object",
+     "emv_data": "object",
+     "acquirer_data": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yaml#GET /v1.1/receipts/{transaction_id}"
+    ]
+   },
+   "tribe-payments": {
+    "segments": [
+     "sale"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "transaction": "object",
+     "card": "object",
+     "shippingLocation": "object",
+     "customer": "object",
+     "recurring": "object",
+     "paymentMethod": "object"
+    },
+    "evidence": [
+     "openapi/_original/tribe-payments-trb-cc-api-merchant-api-credit-card-v3.json#POST /sale",
+     "openapi/_original/tribe-payments-trb-cc-token-api-merchant-api-credit-card-token-v3.json#POST /sale"
+    ]
+   },
+   "tyro": {
+    "segments": [
+     "sales"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "version": "number",
+     "locationId": "string",
+     "origin": "object",
+     "source": "object",
+     "type": "string",
+     "status": "string",
+     "openedZonedDateTime": "string",
+     "closedZonedDateTime": "string",
+     "parentSaleId": "string",
+     "customer": "object",
+     "register": "object",
+     "staff": "object",
+     "section": "object",
+     "table": "object",
+     "bookingId": "string",
+     "items": "array",
+     "discounts": "array",
+     "surcharges": "array",
+     "tax": null,
+     "payments": "array",
+     "total": null,
+     "subtotal": null
+    },
+    "evidence": [
+     "openapi/_original/tyro-connect-sales.yml#GET /sales",
+     "openapi/_original/tyro-connect-sales.yml#GET /sales/{saleId}",
+     "openapi/_original/tyro-connect-sales.yml#PATCH /sales/{saleId}"
+    ]
+   }
+  },
+  "shift": {
+   "aramark": {
+    "segments": [
+     "shifts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string",
+     "count": "integer",
+     "scheduled_shifts": "array"
+    },
+    "evidence": [
+     "openapi/_original/aramark-labor-schedule-openapi.yaml#GET /employee/shifts",
+     "openapi/_original/aramark-labor-schedule.yaml#GET /employee/shifts"
+    ]
+   },
+   "block": {
+    "segments": [
+     "shifts",
+     "timecards"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "state": "string",
+     "opened_at": "string",
+     "ended_at": "string",
+     "closed_at": "string",
+     "description": "string",
+     "opened_cash_money": "object",
+     "expected_cash_money": "object",
+     "closed_cash_money": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "location_id": "string",
+     "cash_payment_money": "object",
+     "cash_refunds_money": "object",
+     "cash_paid_in_money": "object",
+     "cash_paid_out_money": "object",
+     "device": "object",
+     "team_member_ids": "array",
+     "opening_team_member_id": "string",
+     "ending_team_member_id": "string",
+     "closing_team_member_id": "string",
+     "employee_id": "string",
+     "timezone": "string",
+     "start_at": "string",
+     "end_at": "string",
+     "wage": "object",
+     "breaks": "array",
+     "status": "string",
+     "version": "integer",
+     "team_member_id": "string",
+     "declared_cash_tip_money": "object",
+     "idempotency_key": "string",
+     "shift": "object",
+     "errors": "array",
+     "timecard": "object"
+    },
+    "evidence": [
+     "openapi/_original/block-openapi.json#DELETE /v2/labor/shifts/{id}",
+     "openapi/_original/block-openapi.json#DELETE /v2/labor/timecards/{id}",
+     "openapi/_original/block-openapi.json#GET /v2/cash-drawers/shifts",
+     "openapi/_original/block-openapi.json#GET /v2/cash-drawers/shifts/{shift_id}",
+     "openapi/_original/block-openapi.json#GET /v2/labor/shifts/{id}",
+     "openapi/_original/block-openapi.json#GET /v2/labor/timecards/{id}",
+     "openapi/_original/block-openapi.json#POST /v2/labor/shifts",
+     "openapi/_original/block-openapi.json#POST /v2/labor/timecards",
+     "openapi/_original/block-openapi.json#PUT /v2/labor/shifts/{id}",
+     "openapi/_original/block-openapi.json#PUT /v2/labor/timecards/{id}"
+    ]
+   },
+   "lightspeed": {
+    "segments": [
+     "shift",
+     "shifts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "data": "object",
+     "links": "object",
+     "page": "object",
+     "uuid": "string",
+     "businessId": "integer",
+     "businessLocationId": "integer",
+     "deviceId": "integer",
+     "staffId": "integer",
+     "declaredCashTips": "string",
+     "dateInUTC": "string",
+     "events": "array",
+     "created_at": "string",
+     "id": "string",
+     "retailer_id": "string",
+     "time_in": "string",
+     "time_out": "string",
+     "updated_at": "string",
+     "updated_by": "string",
+     "user_id": "string",
+     "version": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lightspeed-k-series-openapi.json#GET /staff/v1/businessLocations/{businessLocationId}/shift",
+     "openapi/_original/lightspeed-k-series-openapi.yml#GET /staff/v1/businessLocations/{businessLocationId}/shift",
+     "openapi/_original/lightspeed-x-series-openapi.json#GET /shifts"
+    ]
+   },
+   "mindbody": {
+    "segments": [
+     "timecards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "PaginationResponse": "object",
+     "TimeCards": "array"
+    },
+    "evidence": [
+     "openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/payroll/timecards"
+    ]
+   },
+   "oracle-hospitality": {
+    "segments": [
+     "shift",
+     "shifts"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "hotelId": "string",
+     "blockId": "object",
+     "eventName": "string",
+     "eventType": "string",
+     "eventDate": "string",
+     "room": "object",
+     "status": "string",
+     "reason": "string",
+     "processingInfoType": "string",
+     "processingInfoCode": "string",
+     "newStartDate": "string",
+     "removeAlternateDates": "boolean",
+     "validateAlternateDates": "boolean",
+     "overbookAll": "boolean",
+     "ignorePreAllocatedRooms": "boolean",
+     "ignoreTraces": "boolean",
+     "overrideEventsProcessingWarnings": "boolean",
+     "validatePreAllocatedRooms": "boolean",
+     "validateTraces": "boolean",
+     "cateringEventsProcessedInfo": "array",
+     "links": "array",
+     "warnings": "array",
+     "reservationId": "object",
+     "housekeepingSchedule": "object",
+     "beginDate": "string",
+     "endDate": "string",
+     "shiftDay": "object"
+    },
+    "evidence": [
+     "openapi/_original/oracle-hospitality-property-v1-blk.json#PUT /hotels/{hotelId}/blocks/{blockId}/shifts",
+     "openapi/_original/oracle-hospitality-property-v1-blkasync.json#GET /hotels/{hotelId}/blocks/{blockId}/shift/{requestId}",
+     "openapi/_original/oracle-hospitality-property-v1-blkasync.json#POST /hotels/{hotelId}/blocks/{blockId}/shift",
+     "openapi/_original/oracle-hospitality-property-v1-hsk.json#PUT /hotels/{hotelId}/reservations/{reservationId}/houseKeepingTaskSchedules/shift"
+    ]
+   },
+   "square": {
+    "segments": [
+     "shifts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "state": "string",
+     "opened_at": "string",
+     "ended_at": "string",
+     "closed_at": "string",
+     "description": "string",
+     "opened_cash_money": "object",
+     "expected_cash_money": "object",
+     "closed_cash_money": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "location_id": "string",
+     "cash_payment_money": "object",
+     "cash_refunds_money": "object",
+     "cash_paid_in_money": "object",
+     "cash_paid_out_money": "object",
+     "device": "object",
+     "team_member_ids": "array",
+     "opening_team_member_id": "string",
+     "ending_team_member_id": "string",
+     "closing_team_member_id": "string",
+     "employee_id": "string",
+     "timezone": "string",
+     "start_at": "string",
+     "end_at": "string",
+     "wage": "object",
+     "breaks": "array",
+     "status": "string",
+     "version": "integer",
+     "team_member_id": "string",
+     "declared_cash_tip_money": "object",
+     "idempotency_key": "string",
+     "shift": "object",
+     "errors": "array"
+    },
+    "evidence": [
+     "openapi/_original/square-openapi.yml#DELETE /v2/labor/shifts/{id}",
+     "openapi/_original/square-openapi.yml#GET /v2/cash-drawers/shifts",
+     "openapi/_original/square-openapi.yml#GET /v2/cash-drawers/shifts/{shift_id}",
+     "openapi/_original/square-openapi.yml#GET /v2/labor/shifts/{id}",
+     "openapi/_original/square-openapi.yml#POST /v2/labor/shifts",
+     "openapi/_original/square-openapi.yml#PUT /v2/labor/shifts/{id}"
+    ]
+   },
+   "toast": {
+    "segments": [
+     "shifts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "guid": "string",
+     "entityType": "string",
+     "externalId": "string",
+     "createdDate": "string",
+     "modifiedDate": "string",
+     "deletedDate": "string",
+     "deleted": "boolean",
+     "jobReference": "object",
+     "employeeReference": "object",
+     "inDate": "string",
+     "outDate": "string",
+     "scheduleConfig": "object"
+    },
+    "evidence": [
+     "openapi/_original/toast-labor-openapi.yaml#DELETE /shifts/{shiftId}",
+     "openapi/_original/toast-labor-openapi.yaml#GET /shifts",
+     "openapi/_original/toast-labor-openapi.yaml#GET /shifts/{shiftId}",
+     "openapi/_original/toast-labor-openapi.yaml#POST /shifts",
+     "openapi/_original/toast-labor-openapi.yaml#PUT /shifts/{shiftId}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "adyen",
+    "agendapro",
+    "aramark",
+    "atrato",
+    "bevz",
+    "block",
+    "bread-financial",
+    "broadlume",
+    "caseys-general-stores",
+    "chargeafter",
+    "citizens-financial",
+    "cloudwalk",
+    "clubhousesoftware",
+    "crm-bonus",
+    "crunchtime",
+    "cuboh",
+    "diebold",
+    "dojo",
+    "ecwid",
+    "erply",
+    "fawry",
+    "flipdish",
+    "flowaccount",
+    "fudo",
+    "geidea",
+    "getir",
+    "global-payments",
+    "green-check-verified",
+    "grubhub",
+    "hang",
+    "happy-cabbage-analytics",
+    "hipay",
+    "incentivio",
+    "just-eat",
+    "lafourchette",
+    "lendapi",
+    "lightspeed",
+    "lightspeed-pos",
+    "lokki",
+    "mercado-pago",
+    "mindbody",
+    "moniepoint",
+    "newstore",
+    "northmill",
+    "nory",
+    "olo",
+    "oracle-hospitality",
+    "oracle-retail",
+    "pagbank",
+    "pagseguro",
+    "payjoy",
+    "paymentsense",
+    "punchh",
+    "ready2order",
+    "roomkeypms",
+    "scalapay",
+    "scansource",
+    "scratchpay",
+    "shopback",
+    "shopify",
+    "silverflow",
+    "square",
+    "stax",
+    "stripe",
+    "sumup",
+    "switstack",
+    "tablecheck",
+    "tamara",
+    "teya",
+    "thefork",
+    "toast",
+    "treez",
+    "tribe-payments",
+    "tyro",
+    "urbanpiper",
+    "verifone",
+    "vori",
+    "zettle"
+   ],
+   "kebab-case": [
+    "agendapro",
+    "atrato",
+    "bevz",
+    "block",
+    "bread-financial",
+    "caseys-general-stores",
+    "chargeafter",
+    "clubhousesoftware",
+    "crunchtime",
+    "cuboh",
+    "diebold",
+    "dojo",
+    "erply",
+    "fawry",
+    "flipdish",
+    "flowaccount",
+    "fudo",
+    "geidea",
+    "getir",
+    "global-payments",
+    "green-check-verified",
+    "grubhub",
+    "hang",
+    "happy-cabbage-analytics",
+    "hipay",
+    "incentivio",
+    "just-eat",
+    "lendapi",
+    "lightspeed",
+    "lokki",
+    "mercado-pago",
+    "moniepoint",
+    "newstore",
+    "northmill",
+    "nory",
+    "oracle-retail",
+    "pagbank",
+    "pagseguro",
+    "payjoy",
+    "paymentsense",
+    "ready2order",
+    "shopback",
+    "square",
+    "stax",
+    "sumup",
+    "switstack",
+    "tamara",
+    "teya",
+    "toast",
+    "treez",
+    "tribe-payments",
+    "tyro",
+    "urbanpiper",
+    "verifone",
+    "vori",
+    "zettle"
+   ],
+   "camelCase": [
+    "adyen",
+    "bread-financial",
+    "broadlume",
+    "crunchtime",
+    "diebold",
+    "drycleancloud",
+    "flipdish",
+    "grubhub",
+    "hipay",
+    "incentivio",
+    "just-eat",
+    "lafourchette",
+    "lightspeed",
+    "lokki",
+    "mindbody",
+    "northmill",
+    "nory",
+    "oracle-hospitality",
+    "ready2order",
+    "scansource",
+    "silverflow",
+    "stax",
+    "thefork",
+    "toast",
+    "treez",
+    "verifone"
+   ],
+   "snake_case": [
+    "agendapro",
+    "aramark",
+    "bread-financial",
+    "broadlume",
+    "cloudwalk",
+    "crm-bonus",
+    "ecwid",
+    "flipdish",
+    "hang",
+    "lendapi",
+    "lightspeed",
+    "lightspeed-pos",
+    "mercado-pago",
+    "newstore",
+    "petpooja",
+    "punchh",
+    "ready2order",
+    "shopify",
+    "stax",
+    "stripe",
+    "tablecheck",
+    "treez",
+    "tribe-payments",
+    "verifone"
+   ],
+   "other": [
+    "bevz",
+    "broadlume",
+    "crunchtime",
+    "flipdish",
+    "flower-shop-network",
+    "green-check-verified",
+    "hipay",
+    "incentivio",
+    "lightspeed",
+    "lokki",
+    "newstore",
+    "shopback",
+    "shopify",
+    "silverflow",
+    "stax",
+    "treez",
+    "tribe-payments",
+    "tyro",
+    "verifone"
+   ],
+   "PascalCase": [
+    "broadlume",
+    "caseys-general-stores",
+    "epos-now",
+    "fawry",
+    "flipdish",
+    "flowaccount",
+    "lightspeed",
+    "oracle-hospitality",
+    "wellnessliving"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "adyen",
+    "agendapro",
+    "block",
+    "bread-financial",
+    "broadlume",
+    "caseys-general-stores",
+    "chargeafter",
+    "erply",
+    "flipdish",
+    "flowaccount",
+    "fudo",
+    "green-check-verified",
+    "hang",
+    "happy-cabbage-analytics",
+    "hipay",
+    "incentivio",
+    "just-eat",
+    "lafourchette",
+    "lendapi",
+    "lightspeed",
+    "lightspeed-pos",
+    "lokki",
+    "mercado-pago",
+    "moniepoint",
+    "newstore",
+    "northmill",
+    "nory",
+    "oracle-hospitality",
+    "oracle-retail",
+    "pagbank",
+    "pagseguro",
+    "paymentsense",
+    "punchh",
+    "ready2order",
+    "scalapay",
+    "shopback",
+    "shopify",
+    "silverflow",
+    "square",
+    "stax",
+    "stripe",
+    "sumup",
+    "switstack",
+    "tablecheck",
+    "teya",
+    "thefork",
+    "toast",
+    "treez",
+    "tribe-payments",
+    "tyro",
+    "urbanpiper",
+    "verifone",
+    "vori"
+   ],
+   "camelCase": [
+    "adyen",
+    "atrato",
+    "bread-financial",
+    "caseys-general-stores",
+    "chargeafter",
+    "citizens-financial",
+    "crunchtime",
+    "diebold",
+    "dojo",
+    "ecwid",
+    "erply",
+    "flipdish",
+    "flowaccount",
+    "geidea",
+    "getir",
+    "grubhub",
+    "happy-cabbage-analytics",
+    "incentivio",
+    "just-eat",
+    "lafourchette",
+    "lightspeed",
+    "lokki",
+    "mindbody",
+    "moniepoint",
+    "newstore",
+    "northmill",
+    "nory",
+    "olo",
+    "oracle-hospitality",
+    "oracle-retail",
+    "payjoy",
+    "paymentsense",
+    "ready2order",
+    "roomkeypms",
+    "scansource",
+    "scratchpay",
+    "shopback",
+    "silverflow",
+    "stax",
+    "tamara",
+    "thefork",
+    "toast",
+    "tribe-payments",
+    "tyro",
+    "verifone",
+    "zettle"
+   ],
+   "snake_case": [
+    "aramark",
+    "bevz",
+    "block",
+    "bread-financial",
+    "cuboh",
+    "green-check-verified",
+    "grubhub",
+    "hang",
+    "hipay",
+    "lendapi",
+    "lightspeed",
+    "mercado-pago",
+    "newstore",
+    "pagbank",
+    "pagseguro",
+    "punchh",
+    "shopify",
+    "square",
+    "stax",
+    "stripe",
+    "sumup",
+    "switstack",
+    "tablecheck",
+    "tamara",
+    "teya",
+    "treez",
+    "urbanpiper"
+   ],
+   "kebab-case": [
+    "atrato",
+    "clubhousesoftware",
+    "lightspeed",
+    "newstore",
+    "paymentsense",
+    "teya"
+   ],
+   "PascalCase": [
+    "bread-financial",
+    "epos-now",
+    "northmill",
+    "oracle-hospitality",
+    "punchh"
+   ],
+   "other": [
+    "hipay"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "adyen",
+    "agendapro",
+    "aramark",
+    "atrato",
+    "block",
+    "bread-financial",
+    "broadlume",
+    "caseys-general-stores",
+    "chargeafter",
+    "citizens-financial",
+    "clubhousesoftware",
+    "crunchtime",
+    "diebold",
+    "dojo",
+    "ecwid",
+    "epos-now",
+    "erply",
+    "fawry",
+    "flipdish",
+    "flowaccount",
+    "fudo",
+    "getir",
+    "global-payments",
+    "green-check-verified",
+    "grubhub",
+    "hang",
+    "happy-cabbage-analytics",
+    "hipay",
+    "incentivio",
+    "just-eat",
+    "lafourchette",
+    "lendapi",
+    "lightspeed",
+    "lightspeed-pos",
+    "lokki",
+    "mercado-pago",
+    "mindbody",
+    "moniepoint",
+    "newstore",
+    "northmill",
+    "nory",
+    "oracle-hospitality",
+    "oracle-retail",
+    "payjoy",
+    "paymentsense",
+    "punchh",
+    "ready2order",
+    "roomkeypms",
+    "scalapay",
+    "scansource",
+    "shopify",
+    "silverflow",
+    "square",
+    "stax",
+    "stripe",
+    "sumup",
+    "switstack",
+    "tablecheck",
+    "teya",
+    "thefork",
+    "toast",
+    "treez",
+    "tribe-payments",
+    "tyro",
+    "verifone",
+    "vori",
+    "wellnessliving",
+    "zettle"
+   ],
+   "camelCase": [
+    "adyen",
+    "atrato",
+    "bread-financial",
+    "caseys-general-stores",
+    "chargeafter",
+    "citizens-financial",
+    "crunchtime",
+    "diebold",
+    "dojo",
+    "ecwid",
+    "erply",
+    "fawry",
+    "flipdish",
+    "flowaccount",
+    "getir",
+    "global-payments",
+    "green-check-verified",
+    "grubhub",
+    "happy-cabbage-analytics",
+    "incentivio",
+    "just-eat",
+    "lafourchette",
+    "lightspeed",
+    "lokki",
+    "mindbody",
+    "moniepoint",
+    "northmill",
+    "olo",
+    "oracle-hospitality",
+    "oracle-retail",
+    "payjoy",
+    "ready2order",
+    "roomkeypms",
+    "scalapay",
+    "scansource",
+    "silverflow",
+    "stax",
+    "thefork",
+    "toast",
+    "treez",
+    "tribe-payments",
+    "tyro",
+    "verifone",
+    "zettle"
+   ],
+   "snake_case": [
+    "agendapro",
+    "aramark",
+    "block",
+    "bread-financial",
+    "clubhousesoftware",
+    "diebold",
+    "erply",
+    "green-check-verified",
+    "grubhub",
+    "hang",
+    "hipay",
+    "lightspeed",
+    "lightspeed-pos",
+    "mercado-pago",
+    "newstore",
+    "nory",
+    "punchh",
+    "ready2order",
+    "shopify",
+    "square",
+    "stax",
+    "stripe",
+    "sumup",
+    "switstack",
+    "tablecheck",
+    "teya",
+    "treez",
+    "verifone",
+    "vori",
+    "wellnessliving"
+   ],
+   "other": [
+    "bread-financial",
+    "broadlume",
+    "crunchtime",
+    "flipdish",
+    "flower-shop-network",
+    "hipay",
+    "lightspeed",
+    "lokki",
+    "mindbody",
+    "shopify",
+    "stax",
+    "sumup",
+    "tribe-payments",
+    "verifone"
+   ],
+   "PascalCase": [
+    "broadlume",
+    "caseys-general-stores",
+    "flowaccount",
+    "northmill",
+    "oracle-hospitality"
+   ],
+   "kebab-case": [
+    "clubhousesoftware",
+    "hipay",
+    "incentivio",
+    "verifone"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "adyen",
+    "agendapro",
+    "atrato",
+    "block",
+    "bread-financial",
+    "caseys-general-stores",
+    "chargeafter",
+    "citizens-financial",
+    "clubhousesoftware",
+    "ecwid",
+    "erply",
+    "flipdish",
+    "green-check-verified",
+    "hang",
+    "happy-cabbage-analytics",
+    "just-eat",
+    "lafourchette",
+    "lightspeed",
+    "lokki",
+    "mercado-pago",
+    "newstore",
+    "nory",
+    "oracle-hospitality",
+    "oracle-retail",
+    "ready2order",
+    "shopify",
+    "silverflow",
+    "square",
+    "stripe",
+    "sumup",
+    "teya",
+    "thefork",
+    "tribe-payments",
+    "tyro",
+    "verifone",
+    "zettle"
+   ],
+   "page": [
+    "agendapro",
+    "aramark",
+    "atrato",
+    "broadlume",
+    "clubhousesoftware",
+    "epos-now",
+    "flipdish",
+    "fudo",
+    "getir",
+    "grubhub",
+    "hang",
+    "hipay",
+    "incentivio",
+    "lafourchette",
+    "lightspeed",
+    "lokki",
+    "moniepoint",
+    "northmill",
+    "punchh",
+    "ready2order",
+    "scalapay",
+    "scansource",
+    "stax",
+    "stripe",
+    "switstack",
+    "tablecheck",
+    "thefork",
+    "toast",
+    "treez",
+    "tribe-payments",
+    "tyro",
+    "verifone",
+    "vori"
+   ],
+   "offset": [
+    "adyen",
+    "bread-financial",
+    "caseys-general-stores",
+    "chargeafter",
+    "citizens-financial",
+    "clubhousesoftware",
+    "ecwid",
+    "green-check-verified",
+    "hang",
+    "happy-cabbage-analytics",
+    "just-eat",
+    "lightspeed",
+    "mercado-pago",
+    "newstore",
+    "oracle-hospitality",
+    "oracle-retail",
+    "ready2order",
+    "sumup",
+    "teya",
+    "zettle"
+   ],
+   "page_size": [
+    "adyen",
+    "clubhousesoftware",
+    "crunchtime",
+    "erply",
+    "flipdish",
+    "flowaccount",
+    "getir",
+    "lightspeed",
+    "lightspeed-pos",
+    "lokki",
+    "moniepoint",
+    "newstore",
+    "northmill",
+    "scansource",
+    "toast",
+    "treez",
+    "tribe-payments",
+    "verifone"
+   ],
+   "size": [
+    "aramark",
+    "grubhub",
+    "lendapi",
+    "lightspeed",
+    "lokki",
+    "moniepoint",
+    "scalapay",
+    "switstack"
+   ],
+   "cursor": [
+    "adyen",
+    "block",
+    "lightspeed",
+    "newstore",
+    "square"
+   ],
+   "per_page": [
+    "agendapro",
+    "hang",
+    "hipay",
+    "stax",
+    "tablecheck"
+   ],
+   "count": [
+    "block",
+    "incentivio",
+    "just-eat",
+    "newstore",
+    "square"
+   ],
+   "start": [
+    "flipdish",
+    "grubhub",
+    "lendapi",
+    "oracle-hospitality",
+    "zettle"
+   ],
+   "after": [
+    "flipdish",
+    "just-eat",
+    "lightspeed",
+    "lightspeed-pos",
+    "teya"
+   ],
+   "skip": [
+    "erply",
+    "flipdish",
+    "lokki",
+    "verifone"
+   ],
+   "before": [
+    "bread-financial",
+    "lightspeed",
+    "teya"
+   ],
+   "next": [
+    "clubhousesoftware"
+   ],
+   "starting_after": [
+    "stripe"
+   ],
+   "page_token": [
+    "toast"
+   ]
+  },
+  "property": {
+   "lower": [
+    "adyen",
+    "agendapro",
+    "aramark",
+    "block",
+    "caseys-general-stores",
+    "crm-bonus",
+    "dojo",
+    "erply",
+    "fudo",
+    "green-check-verified",
+    "grubhub",
+    "happy-cabbage-analytics",
+    "incentivio",
+    "lightspeed",
+    "lightspeed-pos",
+    "lokki",
+    "newstore",
+    "northmill",
+    "oracle-hospitality",
+    "paymentsense",
+    "punchh",
+    "ready2order",
+    "roomkeypms",
+    "shopify",
+    "square",
+    "stripe",
+    "sumup",
+    "switstack",
+    "tablecheck",
+    "teya",
+    "toast",
+    "tribe-payments",
+    "tyro",
+    "urbanpiper"
+   ],
+   "snake_case": [
+    "agendapro",
+    "aramark",
+    "block",
+    "crm-bonus",
+    "green-check-verified",
+    "grubhub",
+    "lightspeed",
+    "lightspeed-pos",
+    "newstore",
+    "punchh",
+    "shopify",
+    "square",
+    "stripe",
+    "sumup",
+    "switstack",
+    "tablecheck",
+    "teya",
+    "urbanpiper",
+    "wellnessliving"
+   ],
+   "camelCase": [
+    "adyen",
+    "caseys-general-stores",
+    "crm-bonus",
+    "dojo",
+    "grubhub",
+    "happy-cabbage-analytics",
+    "incentivio",
+    "lightspeed",
+    "lokki",
+    "oracle-hospitality",
+    "roomkeypms",
+    "toast",
+    "tribe-payments",
+    "tyro"
+   ],
+   "other": [
+    "adyen",
+    "lightspeed",
+    "ready2order"
+   ],
+   "PascalCase": [
+    "flipdish",
+    "mindbody",
+    "northmill"
+   ]
+  }
+ }
+}

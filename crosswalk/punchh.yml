@@ -1,0 +1,37 @@
+provider: punchh
+apis_io: https://apis.io/providers/punchh/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  store_location:
+    path_segment:
+    - locations
+    properties:
+      name: name
+      phone: phone_number
+      status:
+      - state
+      - status
+      address: address
+      country: country
+      time_zone: time_zone
+      latitude: latitude
+      location_id: location_id
+      longitude: longitude
+      updated_at: updated_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/punchh-platform-functions-api-openapi.yml#DELETE /api2/dashboard/locations
+    - openapi/_original/punchh-platform-functions-api-openapi.yml#GET /api2/dashboard/locations
+    - openapi/_original/punchh-platform-functions-api-openapi.yml#PATCH /api2/dashboard/locations
+    - openapi/_original/punchh-platform-functions-api-openapi.yml#POST /api2/dashboard/locations
+  sale:
+    path_segment:
+    - transactions
+    properties:
+      id: id
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/punchh-pos-api-openapi.yml#POST /api/pos/transactions

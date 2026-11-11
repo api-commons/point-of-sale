@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/point-of-sale/main/schema/sale.json",
+  "title": "Sale",
+  "description": "The common sale in Point of Sale, distilled from 18 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.611,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "Id"
+      ]
+    },
+    "customer_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.444,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "client_id",
+        "customer",
+        "customer_id"
+      ]
+    },
+    "payments": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.389,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "payments",
+        "tenders",
+        "Payments"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.278,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "created_at"
+      ],
+      "format": "date-time"
+    },
+    "location_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.278,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "location_id",
+        "location",
+        "outlet_id",
+        "locationId"
+      ]
+    },
+    "line_items": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "line_items",
+        "items"
+      ]
+    },
+    "tax": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "taxes",
+        "total_tax",
+        "tax"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "updated_at"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "point-of-sale",
+    "concept": "sale",
+    "providers": 18,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

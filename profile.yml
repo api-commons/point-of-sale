@@ -1,0 +1,603 @@
+context: point-of-sale
+name: Point of Sale
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Point-of-Sale
+  - POS
+  - Point of Sale
+  - Retail POS
+  - In-Store
+  - Payments Terminal
+  providers_with_harvested_openapi: 84
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  sale:
+    flowaccount: /receipts are accounting receipts
+  store_location:
+    happy-cabbage-analytics: /orders/{id}/items/{id}/store assigns a fulfilment store
+    caseys-general-stores: /store is the operator's internal store directory
+duplicates: {}
+shared_specs: {}
+concepts:
+  store_location:
+    segments_seen:
+      locations: 7
+      stores: 4
+      store: 1
+      location: 1
+      outlets: 1
+      outlet: 1
+    providers_exposing: 11
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET collection
+      providers: 11
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.818
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.636
+      tier: core
+    - operation: UPDATE item
+      providers: 6
+      share: 0.545
+      tier: core
+    - operation: DELETE item
+      providers: 4
+      share: 0.364
+      tier: extended
+    - operation: DELETE collection
+      providers: 2
+      share: 0.182
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.182
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.091
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 8
+      share: 0.8
+      type: string
+      spellings:
+      - name
+      - Name
+    - name: phone
+      tier: core
+      providers: 7
+      share: 0.7
+      type: string
+      spellings:
+      - phone_number
+      - phone
+      - PhoneNumber
+      - Phone
+    - name: status
+      tier: core
+      providers: 7
+      share: 0.7
+      type: string
+      spellings:
+      - status
+      - active
+      - Active
+      - IsActive
+      - state
+    - name: address
+      tier: core
+      providers: 6
+      share: 0.6
+      type: object
+      spellings:
+      - address
+      - Address
+    - name: id
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - id
+      - uuid
+      - Id
+    - name: country
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - country
+      - Country
+    - name: currency
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - currency
+      - Currency
+      - CurrencyCode
+    - name: time_zone
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - timezone
+      - time_zone
+    - name: created_at
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: string
+      spellings:
+      - created_at
+    - name: latitude
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: number
+      spellings:
+      - latitude
+      - Latitude
+    - name: location_id
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: integer
+      spellings:
+      - StoreId
+      - store_id
+      - location_id
+      - locationId
+    - name: longitude
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: number
+      spellings:
+      - longitude
+      - Longitude
+    - name: description
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - description
+    - name: email
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - email
+      - Email
+    - name: logo_url
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - logo_url
+      - LogoUrl
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - updated_at
+    long_tail_count: 162
+    long_tail_sample:
+    - business_email
+    - business_name
+    - capabilities
+    - city
+    - coordinates
+    - external_store_id
+    - facebook_url
+    - full_format_logo_url
+    - hours
+    - instagram_username
+    - language_code
+    - mcc
+    - merchant_id
+    - metadata
+    - pos_background_url
+    - post_code
+    - tax_ids
+    - twitter_username
+    - type
+    - version
+    - website_url
+    - additional_url
+    - address1
+    - address2
+    - allow_chef_notes
+    - allow_pre_orders_and_table_service
+    - alternate_store_number
+    - always_appear_open
+    - apm_phone_number
+    - app_id
+    - app_ids
+    - automatically_accept_orders
+    - avalara
+    - brand
+    - card_order_delivery_enabled
+    - card_orders_pickup_enabled
+    - cash_orders_delivery_enabled
+    - cash_orders_pickup_enabled
+    - cashboxes
+    - cell_phone
+  terminal:
+    segments_seen:
+      readers: 2
+      terminals: 2
+      registers: 1
+    providers_exposing: 4
+    providers_with_readable_schema: 4
+    operations:
+    - operation: GET collection
+      providers: 4
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 4
+      share: 1.0
+      tier: core
+    - operation: POST collection
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.5
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.5
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 3
+      share: 0.75
+      type: string
+      spellings:
+      - id
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.75
+      type: string
+      spellings:
+      - name
+    long_tail_count: 37
+    long_tail_sample:
+    - created_at
+    - location_id
+    - serial_number
+    - status
+    - updated_at
+    - activation_code
+    - ask_for_note_on_save
+    - ask_for_user_on_sale
+    - button_layout_id
+    - caid
+    - cash_managed_payment_type_id
+    - configuration_tag
+    - deleted_at
+    - device
+    - device_id
+    - email_receipt
+    - external_reference_id
+    - host_id
+    - invoice_prefix
+    - invoice_sequence
+    - invoice_suffix
+    - is_open
+    - metadata
+    - paired_at
+    - pairing_code
+    - print_note_on_receipt
+    - print_receipt
+    - reader_id
+    - receipt_template_id
+    - register_close_time
+    - register_open_sequence_id
+    - register_open_time
+    - service_account_id
+    - show_discounts_on_receipts
+    - terminal_name
+    - tid
+    - version
+  sale:
+    segments_seen:
+      sales: 9
+      receipts: 5
+      transactions: 3
+      checks: 2
+      orders: 2
+      sale: 1
+    providers_exposing: 20
+    providers_with_readable_schema: 18
+    operations:
+    - operation: GET collection
+      providers: 13
+      share: 0.65
+      tier: core
+    - operation: GET item
+      providers: 12
+      share: 0.6
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.35
+      tier: extended
+    - operation: UPDATE item
+      providers: 3
+      share: 0.15
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.05
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.05
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 11
+      share: 0.611
+      type: string
+      spellings:
+      - id
+      - uuid
+      - Id
+    - name: customer_id
+      tier: extended
+      providers: 8
+      share: 0.444
+      type: string
+      spellings:
+      - client_id
+      - customer
+      - customer_id
+    - name: payments
+      tier: extended
+      providers: 7
+      share: 0.389
+      type: array
+      spellings:
+      - payments
+      - tenders
+      - Payments
+    - name: status
+      tier: extended
+      providers: 6
+      share: 0.333
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: string
+      spellings:
+      - created_at
+    - name: location_id
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: string
+      spellings:
+      - location_id
+      - location
+      - outlet_id
+      - locationId
+    - name: line_items
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: array
+      spellings:
+      - line_items
+      - items
+    - name: tax
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: array
+      spellings:
+      - taxes
+      - total_tax
+      - tax
+    - name: updated_at
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: string
+      spellings:
+      - updated_at
+    long_tail_count: 181
+    long_tail_sample:
+    - discount
+    - employee_id
+    - metadata
+    - total
+    - type
+    - date
+    - merchant_data
+    - order_id
+    - origin
+    - product
+    - receipt_number
+    - reference_id
+    - refunds
+    - register_id
+    - shipping_address
+    - source
+    - subtotal
+    - accounts_transaction_id
+    - acquirer_data
+    - address
+    - address_line1
+    - adjustments
+    - affiliate
+    - anniversary
+    - articles
+    - avatar_remote_url
+    - balance
+    - birthday
+    - booking_id
+    - brand
+    - card
+    - card_number
+    - cart_id
+    - cart_version_id
+    - cashier_name
+    - catering
+    - cc_last4
+    - chain_id
+    - channel
+    - charges
+  shift:
+    segments_seen:
+      shifts: 4
+      timecards: 2
+      shift: 1
+    providers_exposing: 5
+    providers_with_readable_schema: 5
+    operations:
+    - operation: GET collection
+      providers: 5
+      share: 1.0
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    - operation: GET item
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    - operation: POST collection
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    properties:
+    - name: created_at
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - created_at
+    - name: employee_id
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - employee_id
+      - team_member_id
+      - staffId
+      - user_id
+    - name: id
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - id
+      - uuid
+    - name: location_id
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - location_id
+      - businessLocationId
+    - name: status
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - status
+      - state
+    - name: updated_at
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - updated_at
+    - name: version
+      tier: core
+      providers: 3
+      share: 0.6
+      type: integer
+      spellings:
+      - version
+    long_tail_count: 34
+    long_tail_sample:
+    - breaks
+    - cash_paid_in_money
+    - cash_paid_out_money
+    - cash_payment_money
+    - cash_refunds_money
+    - closed_at
+    - closed_cash_money
+    - closing_team_member_id
+    - declared_cash_tip_money
+    - description
+    - device
+    - end_at
+    - ending_team_member_id
+    - expected_cash_money
+    - idempotency_key
+    - opened_at
+    - opened_cash_money
+    - opening_team_member_id
+    - start_at
+    - team_member_ids
+    - timezone
+    - wage
+    - business_id
+    - date_in_utc
+    - declared_cash_tips
+    - device_id
+    - events
+    - pagination_response
+    - retailer_id
+    - scheduled_shifts
+    - time_in
+    - time_out
+    - timecard
+    - updated_by

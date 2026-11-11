@@ -1,0 +1,24 @@
+provider: mercado-pago
+apis_io: https://apis.io/providers/mercado-pago/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  store_location:
+    path_segment:
+    - stores
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mercado-pago-openapi.yml#DELETE /v1/stores/{id}
+    - openapi/_original/mercado-pago-openapi.yml#GET /v1/stores
+    - openapi/_original/mercado-pago-openapi.yml#GET /v1/stores/{id}
+    - openapi/_original/mercado-pago-openapi.yml#POST /v1/stores
+    - openapi/_original/mercado-pago-openapi.yml#PUT /v1/stores/{id}
+  sale:
+    path_segment:
+    - orders
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mercado-pago-openapi.yml#DELETE /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders
+    - openapi/_original/mercado-pago-openapi.yml#PUT /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders

@@ -1,0 +1,12 @@
+provider: roomkeypms
+apis_io: https://apis.io/providers/roomkeypms/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  sale:
+    path_segment:
+    - receipts
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/roomkeypms-openapi.yml#GET /hotels/{hotelId}/statistics/receipts

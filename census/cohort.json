@@ -1,0 +1,996 @@
+[
+ {
+  "slug": "adyen",
+  "specs": [
+   "openapi/_original/accounts-openapi-original.yml",
+   "openapi/_original/adyen-balance-control-api-openapi.yml",
+   "openapi/_original/adyen-binlookup-api-openapi.yml",
+   "openapi/_original/adyen-checkout-api-openapi.yml",
+   "openapi/_original/adyen-configuration-api-openapi.yml",
+   "openapi/_original/adyen-data-protection-api-openapi.yml",
+   "openapi/_original/balance-control-openapi-original.yml",
+   "openapi/_original/binlookup-openapi-original.yml",
+   "openapi/_original/checkout-openapi-original.yml",
+   "openapi/_original/configuration-openapi-original.yml",
+   "openapi/_original/data-protection-openapi-original.yml",
+   "openapi/_original/disputes-openapi-original.yml",
+   "openapi/_original/funds-openapi-original.yml",
+   "openapi/_original/hosted-onboarding-openapi-original.yml",
+   "openapi/_original/legal-entity-openapi-original.yml",
+   "openapi/_original/management-openapi-original.yml",
+   "openapi/_original/notification-configurations-openapi-original.yml",
+   "openapi/_original/payments-openapi-original.yml",
+   "openapi/_original/payouts-openapi-original.yml",
+   "openapi/_original/pos-terminal-openapi-original.yml",
+   "openapi/_original/recurring-openapi-original.yml",
+   "openapi/_original/stored-value-openapi-original.yml",
+   "openapi/_original/terminal-openapi-original.yml",
+   "openapi/_original/test-cards-openapi-original.yml",
+   "openapi/_original/transfers-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "agendapro",
+  "specs": [
+   "openapi/_original/agendapro-connect-v3-openapi.yml",
+   "openapi/_original/platform-connect-v3.json"
+  ]
+ },
+ {
+  "slug": "aramark",
+  "specs": [
+   "openapi/_original/aramark-alerts-openapi.json",
+   "openapi/_original/aramark-alerts.json",
+   "openapi/_original/aramark-ask-marko-openapi.json",
+   "openapi/_original/aramark-ask-marko.json",
+   "openapi/_original/aramark-business-unit-core-details-openapi.json",
+   "openapi/_original/aramark-business-unit-core-details.json",
+   "openapi/_original/aramark-calendar-openapi.json",
+   "openapi/_original/aramark-calendar.json",
+   "openapi/_original/aramark-catering-openapi.json",
+   "openapi/_original/aramark-catering.json",
+   "openapi/_original/aramark-daily-food-waste-tracking-openapi.json",
+   "openapi/_original/aramark-daily-food-waste-tracking.json",
+   "openapi/_original/aramark-district-core-details-openapi.json",
+   "openapi/_original/aramark-district-core-details.json",
+   "openapi/_original/aramark-division-core-details-openapi.json",
+   "openapi/_original/aramark-division-core-details.json",
+   "openapi/_original/aramark-financial-daily-account-summary-openapi.json",
+   "openapi/_original/aramark-financial-daily-account-summary.json",
+   "openapi/_original/aramark-growth-openapi.json",
+   "openapi/_original/aramark-growth.json",
+   "openapi/_original/aramark-gsc-gpo-0-openapi.json",
+   "openapi/_original/aramark-gsc-gpo-0.json",
+   "openapi/_original/aramark-inventory-openapi.json",
+   "openapi/_original/aramark-inventory.json",
+   "openapi/_original/aramark-iot-openapi.json",
+   "openapi/_original/aramark-iot.json",
+   "openapi/_original/aramark-labor-daily-openapi.json",
+   "openapi/_original/aramark-labor-daily.json",
+   "openapi/_original/aramark-labor-employee-openapi.json",
+   "openapi/_original/aramark-labor-employee.json",
+   "openapi/_original/aramark-labor-manager-employees-openapi.json",
+   "openapi/_original/aramark-labor-manager-employees.json",
+   "openapi/_original/aramark-labor-schedule-openapi.yaml",
+   "openapi/_original/aramark-labor-schedule.yaml",
+   "openapi/_original/aramark-line-business-core-details-openapi.json",
+   "openapi/_original/aramark-line-business-core-details.json",
+   "openapi/_original/aramark-location-core-details-openapi.json",
+   "openapi/_original/aramark-location-core-details.json",
+   "openapi/_original/aramark-marko-users-openapi.json",
+   "openapi/_original/aramark-marko-users.json",
+   "openapi/_original/aramark-operational-daily-openapi.json",
+   "openapi/_original/aramark-operational-daily.json",
+   "openapi/_original/aramark-organization-brands-openapi.json",
+   "openapi/_original/aramark-organization-brands.json",
+   "openapi/_original/aramark-organization-clients-openapi.json",
+   "openapi/_original/aramark-organization-clients.json",
+   "openapi/_original/aramark-organization-hierarchy-openapi.json",
+   "openapi/_original/aramark-organization-hierarchy-v2-openapi.json",
+   "openapi/_original/aramark-organization-hierarchy-v2.json",
+   "openapi/_original/aramark-organization-hierarchy.json",
+   "openapi/_original/aramark-organization-openapi.json",
+   "openapi/_original/aramark-organization-profit-center-core-details-openapi.json",
+   "openapi/_original/aramark-organization-profit-center-core-details.json",
+   "openapi/_original/aramark-organization-suppliers-openapi.json",
+   "openapi/_original/aramark-organization-suppliers.json",
+   "openapi/_original/aramark-organization.json",
+   "openapi/_original/aramark-point-sale-openapi.json",
+   "openapi/_original/aramark-point-sale.json",
+   "openapi/_original/aramark-pos-daily-product-ranking-openapi.json",
+   "openapi/_original/aramark-pos-daily-product-ranking.json",
+   "openapi/_original/aramark-pos-daily-sales-openapi.json",
+   "openapi/_original/aramark-pos-daily-sales.json",
+   "openapi/_original/aramark-pos-items-openapi.json",
+   "openapi/_original/aramark-pos-items.json",
+   "openapi/_original/aramark-pos-transactions-openapi.json",
+   "openapi/_original/aramark-pos-transactions.json",
+   "openapi/_original/aramark-product-openapi.json",
+   "openapi/_original/aramark-product-recipe-openapi.json",
+   "openapi/_original/aramark-product-recipe.json",
+   "openapi/_original/aramark-product-retail-items-openapi.json",
+   "openapi/_original/aramark-product-retail-items.json",
+   "openapi/_original/aramark-product.json",
+   "openapi/_original/aramark-profile-app-openapi.json",
+   "openapi/_original/aramark-profile-app.json",
+   "openapi/_original/aramark-profile-user-openapi.json",
+   "openapi/_original/aramark-profile-user.json",
+   "openapi/_original/aramark-recipe-decorations-openapi.json",
+   "openapi/_original/aramark-recipe-decorations.json",
+   "openapi/_original/aramark-region-core-details-openapi.json",
+   "openapi/_original/aramark-region-core-details.json",
+   "openapi/_original/aramark-security-openapi.json",
+   "openapi/_original/aramark-security.json",
+   "openapi/_original/aramark-service-areas-openapi.json",
+   "openapi/_original/aramark-service-areas-v2-openapi.json",
+   "openapi/_original/aramark-service-areas-v2.json",
+   "openapi/_original/aramark-service-areas.json",
+   "openapi/_original/aramark-service-inventory-openapi.json",
+   "openapi/_original/aramark-service-inventory.json",
+   "openapi/_original/aramark-service-meal-periods-openapi.json",
+   "openapi/_original/aramark-service-meal-periods.json",
+   "openapi/_original/aramark-service-menu-items-openapi.yaml",
+   "openapi/_original/aramark-service-menu-items.yaml",
+   "openapi/_original/aramark-service-menus-openapi.json",
+   "openapi/_original/aramark-service-menus.json",
+   "openapi/_original/aramark-service-openapi.json",
+   "openapi/_original/aramark-service-production-areas-openapi.yaml",
+   "openapi/_original/aramark-service-production-areas.yaml",
+   "openapi/_original/aramark-service-production-departments-openapi.yaml",
+   "openapi/_original/aramark-service-production-departments.yaml",
+   "openapi/_original/aramark-service-recipe-openapi.json",
+   "openapi/_original/aramark-service-recipe.json",
+   "openapi/_original/aramark-service-recipes-v2-openapi.json",
+   "openapi/_original/aramark-service-recipes-v2.json",
+   "openapi/_original/aramark-service-results-openapi.json",
+   "openapi/_original/aramark-service-results.json",
+   "openapi/_original/aramark-service-v3-openapi.json",
+   "openapi/_original/aramark-service-v3.json",
+   "openapi/_original/aramark-service-weekly-overproduction-openapi.json",
+   "openapi/_original/aramark-service-weekly-overproduction.json",
+   "openapi/_original/aramark-service.json",
+   "openapi/_original/aramark-sites-openapi.json",
+   "openapi/_original/aramark-sites.json",
+   "openapi/_original/aramark-sub-location-core-details-openapi.json",
+   "openapi/_original/aramark-sub-location-core-details.json",
+   "openapi/_original/aramark-sub-locations-openapi.json",
+   "openapi/_original/aramark-sub-locations.json",
+   "openapi/_original/aramark-units-measure-openapi.json",
+   "openapi/_original/aramark-units-measure.json",
+   "openapi/_original/aramark-vendor-openapi.json",
+   "openapi/_original/aramark-vendor.json"
+  ]
+ },
+ {
+  "slug": "atrato",
+  "specs": [
+   "openapi/_original/atrato-partners-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bevz",
+  "specs": [
+   "openapi/_original/bevz-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "block",
+  "specs": [
+   "openapi/_original/block-openapi.json"
+  ]
+ },
+ {
+  "slug": "bread-financial",
+  "specs": [
+   "openapi/_original/bread-buyer-management-openapi.json",
+   "openapi/_original/bread-checkout-openapi.json",
+   "openapi/_original/bread-foundations-openapi.json",
+   "openapi/_original/bread-merchant-operations-openapi.json",
+   "openapi/_original/bread-payments-openapi.json",
+   "openapi/_original/bread-program-openapi.json",
+   "openapi/_original/bread-servicing-openapi.json",
+   "openapi/_original/bread-tradein-openapi.json",
+   "openapi/_original/bread-webhook-openapi.json"
+  ]
+ },
+ {
+  "slug": "broadlume",
+  "specs": [
+   "openapi/_original/broadlume-bms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "caseys-general-stores",
+  "specs": [
+   "openapi/_original/caseys-general-stores-cas-api-openapi.json",
+   "openapi/_original/caseys-general-stores-cas-gateway-api-openapi.json",
+   "openapi/_original/caseys-general-stores-devops-metrics-api-openapi.json",
+   "openapi/_original/caseys-general-stores-digital-production-planner-api-openapi.json",
+   "openapi/_original/caseys-general-stores-fuel-price-api-openapi.json",
+   "openapi/_original/caseys-general-stores-item-api-openapi.json",
+   "openapi/_original/caseys-general-stores-itsm-api-openapi.json",
+   "openapi/_original/caseys-general-stores-kitchen-supply-ordering-api-openapi.json",
+   "openapi/_original/caseys-general-stores-old-store-api-openapi.json",
+   "openapi/_original/caseys-general-stores-power-inventory-api-openapi.json",
+   "openapi/_original/caseys-general-stores-production-planner-api-openapi.json",
+   "openapi/_original/caseys-general-stores-shelf-label-print-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-details-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-messaging-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-number-api-openapi.json",
+   "openapi/_original/caseys-general-stores-supplier-api-openapi.json",
+   "openapi/_original/caseys-general-stores-tank-level-api-openapi.json",
+   "openapi/_original/caseys-general-stores-tax-api-openapi.json",
+   "openapi/_original/caseys-general-stores-team-member-api-openapi.json",
+   "openapi/_original/caseys-general-stores-vendor-checkin-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "chargeafter",
+  "specs": [
+   "openapi/_original/chargeafter-charge-api-openapi-original.json",
+   "openapi/_original/chargeafter-charge-api-openapi.yml",
+   "openapi/_original/chargeafter-checkout-application-status-openapi-original.json",
+   "openapi/_original/chargeafter-checkout-application-status-openapi.yml",
+   "openapi/_original/chargeafter-checkout-application-token-openapi-original.json",
+   "openapi/_original/chargeafter-checkout-application-token-openapi.yml",
+   "openapi/_original/chargeafter-checkout-session-accounts-openapi-original.json",
+   "openapi/_original/chargeafter-checkout-session-accounts-openapi.yml",
+   "openapi/_original/chargeafter-checkout-session-openapi-original.json",
+   "openapi/_original/chargeafter-checkout-session-openapi.yml",
+   "openapi/_original/chargeafter-consumer-api-openapi-original.json",
+   "openapi/_original/chargeafter-consumer-api-openapi.yml",
+   "openapi/_original/chargeafter-consumer-credit-lookup-openapi-original.json",
+   "openapi/_original/chargeafter-consumer-credit-lookup-openapi.yml",
+   "openapi/_original/chargeafter-consumer-details-openapi-original.json",
+   "openapi/_original/chargeafter-consumer-details-openapi.yml",
+   "openapi/_original/chargeafter-consumers-management-openapi-original.json",
+   "openapi/_original/chargeafter-consumers-management-openapi.yml",
+   "openapi/_original/chargeafter-disputes-management-lenders-openapi-original.json",
+   "openapi/_original/chargeafter-disputes-management-lenders-openapi.yml",
+   "openapi/_original/chargeafter-distribution-api-openapi-original.json",
+   "openapi/_original/chargeafter-distribution-api-openapi.yml",
+   "openapi/_original/chargeafter-funding-api-openapi-original.json",
+   "openapi/_original/chargeafter-funding-api-openapi.yml",
+   "openapi/_original/chargeafter-omni-link-openapi-original.json",
+   "openapi/_original/chargeafter-omni-link-openapi.yml"
+  ]
+ },
+ {
+  "slug": "citizens-financial",
+  "specs": [
+   "openapi/_original/citizens-bank-accounts-api-openapi.yml",
+   "openapi/_original/citizens-bank-atm-locator-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudwalk",
+  "specs": [
+   "openapi/_original/cloudwalk-infinitepay-checkout-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clubhousesoftware",
+  "specs": [
+   "openapi/_original/clubhousesoftware-openapi.json"
+  ]
+ },
+ {
+  "slug": "crm-bonus",
+  "specs": [
+   "openapi/_original/crm-bonus-oto-data-api-openapi.json",
+   "openapi/_original/crm-bonus-oto-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "crunchtime",
+  "specs": [
+   "openapi/_original/crunchtime-cruise-platform-openapi.yml",
+   "openapi/_original/crunchtime-cruise-platform-readme-slices.json",
+   "openapi/_original/crunchtime-inventory-labor-openapi.yml",
+   "openapi/_original/crunchtime-inventory-labor-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "cuboh",
+  "specs": [
+   "openapi/_original/cuboh-openapi.yml"
+  ]
+ },
+ {
+  "slug": "diebold",
+  "specs": [
+   "openapi/_original/diebold-dn-account-bc-api-openapi.json",
+   "openapi/_original/diebold-dn-assist-api-openapi.json",
+   "openapi/_original/diebold-dn-online-mobile-api-openapi.json",
+   "openapi/_original/diebold-dn-open-backend-api-openapi.json",
+   "openapi/_original/diebold-dn-payment-initiation-api-openapi.json",
+   "openapi/_original/diebold-dn-secure-business-processing-api-openapi.json",
+   "openapi/_original/diebold-dn-tm-authorization-api-openapi.json",
+   "openapi/_original/diebold-tm-pre-digitization-api-outbound-openapi.json",
+   "openapi/_original/diebold-tm-pre-digitization-api-outbound-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dojo",
+  "specs": [
+   "openapi/_original/dojo-api.json",
+   "openapi/_original/dojo-epos-data-api.json",
+   "openapi/_original/dojo-epos-tester-tool-api.json",
+   "openapi/_original/dojo-tap-to-pay-on-iphone-api.json",
+   "openapi/_original/dojo-transactions-api.json"
+  ]
+ },
+ {
+  "slug": "drycleancloud",
+  "specs": [
+   "openapi/_original/drycleancloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ecwid",
+  "specs": [
+   "openapi/_original/ecwid-openapi.yml"
+  ]
+ },
+ {
+  "slug": "epos-now",
+  "specs": [
+   "openapi/_original/epos-now-openapi.yml"
+  ]
+ },
+ {
+  "slug": "erply",
+  "specs": [
+   "openapi/_original/erply-assignments-openapi.json",
+   "openapi/_original/erply-cafa-openapi.json",
+   "openapi/_original/erply-pim-openapi.json",
+   "openapi/_original/erply-webhook-openapi.json"
+  ]
+ },
+ {
+  "slug": "fawry",
+  "specs": [
+   "openapi/_original/fawrypay-server-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flipdish",
+  "specs": [
+   "openapi/_original/flipdish-apps-openapi.json",
+   "openapi/_original/flipdish-catalog-openapi.json",
+   "openapi/_original/flipdish-customers-openapi.json",
+   "openapi/_original/flipdish-devices-openapi.json",
+   "openapi/_original/flipdish-marketing-openapi.json",
+   "openapi/_original/flipdish-menus-openapi.json",
+   "openapi/_original/flipdish-orders-openapi.json",
+   "openapi/_original/flipdish-payments-openapi.json",
+   "openapi/_original/flipdish-platform-openapi.json",
+   "openapi/_original/flipdish-stores-openapi.json"
+  ]
+ },
+ {
+  "slug": "flowaccount",
+  "specs": [
+   "openapi/_original/flowaccount-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "flower-shop-network",
+  "specs": [
+   "openapi/_original/flower-shop-network-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fudo",
+  "specs": [
+   "openapi/_original/fudo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "geidea",
+  "specs": [
+   "openapi/_original/geidea-openapi.yml"
+  ]
+ },
+ {
+  "slug": "getir",
+  "specs": [
+   "openapi/_original/getir-food-openapi.json",
+   "openapi/_original/getir-food-openapi.yml"
+  ]
+ },
+ {
+  "slug": "global-payments",
+  "specs": [
+   "openapi/_original/global-payments-unified-payments-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "green-check-verified",
+  "specs": [
+   "openapi/_original/green-check-verified-access-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "grubhub",
+  "specs": [
+   "openapi/_original/grubhub-busy-intervals-openapi.yml",
+   "openapi/_original/grubhub-connect-endpoints-openapi.yml",
+   "openapi/_original/grubhub-connect-webhooks-openapi.yml",
+   "openapi/_original/grubhub-deliveries-openapi.yml",
+   "openapi/_original/grubhub-menu-openapi.yml",
+   "openapi/_original/grubhub-merchant-data-openapi.yml",
+   "openapi/_original/grubhub-merchant-schedules-openapi.yml",
+   "openapi/_original/grubhub-onboarding-openapi.yml",
+   "openapi/_original/grubhub-orders-openapi.yml",
+   "openapi/_original/grubhub-reporting-endpoints-openapi.yml",
+   "openapi/_original/grubhub-reporting-webhooks-openapi.yml",
+   "openapi/_original/grubhub-testing-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hang",
+  "specs": [
+   "openapi/_original/hang-openapi.json"
+  ]
+ },
+ {
+  "slug": "happy-cabbage-analytics",
+  "specs": [
+   "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.json",
+   "openapi/_original/happy-cabbage-analytics-happy-buyers-external-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hipay",
+  "specs": [
+   "openapi/_original/api-gateway.yml",
+   "openapi/_original/applepay-web.yaml",
+   "openapi/_original/gateway.yaml",
+   "openapi/_original/hpayment.yaml",
+   "openapi/_original/marketplace.yaml",
+   "openapi/_original/omnichannel.yaml",
+   "openapi/_original/pos-api.yaml",
+   "openapi/_original/settlement.yaml",
+   "openapi/_original/tokenization.yaml"
+  ]
+ },
+ {
+  "slug": "incentivio",
+  "specs": [
+   "openapi/_original/incentivio-admin-api-openapi.json",
+   "openapi/_original/incentivio-admin-api-openapi.yml",
+   "openapi/_original/incentivio-mobile-api-openapi.json",
+   "openapi/_original/incentivio-mobile-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "just-eat",
+  "specs": [
+   "openapi/_original/just-eat-uk-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lafourchette",
+  "specs": [
+   "openapi/_original/lafourchette-b2b-api-openapi.yml",
+   "openapi/_original/lafourchette-pos-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lendapi",
+  "specs": [
+   "openapi/_original/lendapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "lightspeed",
+  "specs": [
+   "openapi/_original/lightspeed-k-series-openapi.json",
+   "openapi/_original/lightspeed-k-series-openapi.yml",
+   "openapi/_original/lightspeed-x-series-openapi.json"
+  ]
+ },
+ {
+  "slug": "lightspeed-pos",
+  "specs": [
+   "openapi/_original/lightspeed-pos-retail-x-series-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lokki",
+  "specs": [
+   "openapi/_original/lokki-dashboard-api-openapi.json",
+   "openapi/_original/lokki-external-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "mercado-pago",
+  "specs": [
+   "openapi/_original/mercado-pago-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mindbody",
+  "specs": [
+   "openapi/_original/mindbody-public-api-v6-openapi-original.yml",
+   "openapi/_original/mindbody-webhooks-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "moniepoint",
+  "specs": [
+   "openapi/_original/moniepoint-pos-api-openapi.yml",
+   "openapi/_original/monnify-authentication-api-openapi.yml",
+   "openapi/_original/monnify-bills-payment-api-openapi.yml",
+   "openapi/_original/monnify-collections-api-openapi.yml",
+   "openapi/_original/monnify-direct-debit-api-openapi.yml",
+   "openapi/_original/monnify-disbursements-api-openapi.yml",
+   "openapi/_original/monnify-invoices-api-openapi.yml",
+   "openapi/_original/monnify-refunds-api-openapi.yml",
+   "openapi/_original/monnify-reserved-accounts-api-openapi.yml",
+   "openapi/_original/monnify-settlements-api-openapi.yml",
+   "openapi/_original/monnify-sub-accounts-api-openapi.yml",
+   "openapi/_original/monnify-verification-api-openapi.yml",
+   "openapi/_original/monnify-wallets-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "newstore",
+  "specs": [
+   "openapi/_original/newstore-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "northmill",
+  "specs": [
+   "openapi/_original/northmill-flo-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "nory",
+  "specs": [
+   "openapi/_original/nory-middleware-openapi.json"
+  ]
+ },
+ {
+  "slug": "olo",
+  "specs": [
+   "openapi/_original/olo-ordering-openapi.yml",
+   "openapi/_original/olo-promotions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-hospitality",
+  "specs": [
+   "openapi/_original/oracle-hospitality-distribution-outbound-aripublication.json",
+   "openapi/_original/oracle-hospitality-distribution-outbound-lookup.json",
+   "openapi/_original/oracle-hospitality-distribution-outbound-notification.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-book.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-content.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-controls.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-distribution.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-hdpbaoauth2.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-onboard.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-resnotif.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-shop.json",
+   "openapi/_original/oracle-hospitality-nor1-v1-upselloffers.json",
+   "openapi/_original/oracle-hospitality-property-outbound-crmoutbound.json",
+   "openapi/_original/oracle-hospitality-property-outbound-cshoutbound.json",
+   "openapi/_original/oracle-hospitality-property-outbound-fofoutbound.json",
+   "openapi/_original/oracle-hospitality-property-v1-act.json",
+   "openapi/_original/oracle-hospitality-property-v1-actcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-ars.json",
+   "openapi/_original/oracle-hospitality-property-v1-blk.json",
+   "openapi/_original/oracle-hospitality-property-v1-blkasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-blkcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-bof.json",
+   "openapi/_original/oracle-hospitality-property-v1-chl.json",
+   "openapi/_original/oracle-hospitality-property-v1-cms.json",
+   "openapi/_original/oracle-hospitality-property-v1-crm.json",
+   "openapi/_original/oracle-hospitality-property-v1-crmasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-crmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-csh.json",
+   "openapi/_original/oracle-hospitality-property-v1-cshasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-dvm.json",
+   "openapi/_original/oracle-hospitality-property-v1-ecommtokenization.json",
+   "openapi/_original/oracle-hospitality-property-v1-entcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-evm.json",
+   "openapi/_original/oracle-hospitality-property-v1-evmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-expcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-fof.json",
+   "openapi/_original/oracle-hospitality-property-v1-fofcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-hsk.json",
+   "openapi/_original/oracle-hospitality-property-v1-int.json",
+   "openapi/_original/oracle-hospitality-property-v1-intcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-inv.json",
+   "openapi/_original/oracle-hospitality-property-v1-invasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-lms.json",
+   "openapi/_original/oracle-hospitality-property-v1-lov.json",
+   "openapi/_original/oracle-hospitality-property-v1-medcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-oauth.json",
+   "openapi/_original/oracle-hospitality-property-v1-ops.json",
+   "openapi/_original/oracle-hospitality-property-v1-par.json",
+   "openapi/_original/oracle-hospitality-property-v1-parasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-repcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmr.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmrcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsv.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsvasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsvcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rtp.json",
+   "openapi/_original/oracle-hospitality-property-v1-rtpasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-tokenexchange.json"
+  ]
+ },
+ {
+  "slug": "oracle-retail",
+  "specs": [
+   "openapi/_original/oracle-retail-merchandising-openapi.yml",
+   "openapi/_original/oracle-retail-order-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pagbank",
+  "specs": [
+   "openapi/_original/pagseguro-accounts-api-openapi.yml",
+   "openapi/_original/pagseguro-charges-api-openapi.yml",
+   "openapi/_original/pagseguro-checkout-api-openapi.yml",
+   "openapi/_original/pagseguro-connect-api-openapi.yml",
+   "openapi/_original/pagseguro-coupons-api-openapi.yml",
+   "openapi/_original/pagseguro-invoices-api-openapi.yml",
+   "openapi/_original/pagseguro-orders-api-openapi.yml",
+   "openapi/_original/pagseguro-plans-api-openapi.yml",
+   "openapi/_original/pagseguro-public-keys-api-openapi.yml",
+   "openapi/_original/pagseguro-refunds-api-openapi.yml",
+   "openapi/_original/pagseguro-subscribers-api-openapi.yml",
+   "openapi/_original/pagseguro-subscriptions-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pagseguro",
+  "specs": [
+   "openapi/_original/pagseguro-openapi.yml"
+  ]
+ },
+ {
+  "slug": "payjoy",
+  "specs": [
+   "openapi/_original/payjoy-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paymentsense",
+  "specs": [
+   "openapi/_original/paymentsense-connect-e-v0.json",
+   "openapi/_original/paymentsense-connect-v0.json",
+   "openapi/_original/paymentsense-connect-v1.json",
+   "openapi/_original/paymentsense-connect-v2.json"
+  ]
+ },
+ {
+  "slug": "petpooja",
+  "specs": [
+   "openapi/_original/petpooja-openapi.yml"
+  ]
+ },
+ {
+  "slug": "punchh",
+  "specs": [
+   "openapi/_original/punchh-mobile-api-openapi.yml",
+   "openapi/_original/punchh-mobile-redemptions-legacy-openapi.yml",
+   "openapi/_original/punchh-mobile-redemptions-v2-openapi.yml",
+   "openapi/_original/punchh-mobile-subscription-openapi.yml",
+   "openapi/_original/punchh-online-ordering-redemptions-legacy-openapi.yml",
+   "openapi/_original/punchh-online-ordering-redemptions-v2-openapi.yml",
+   "openapi/_original/punchh-online-ordering-sso-api-openapi.yml",
+   "openapi/_original/punchh-online-ordering-subscription-openapi.yml",
+   "openapi/_original/punchh-platform-functions-api-openapi.yml",
+   "openapi/_original/punchh-platform-functions-headless-offers-openapi.yml",
+   "openapi/_original/punchh-platform-functions-offers-ingestion-openapi.yml",
+   "openapi/_original/punchh-platform-functions-subscription-openapi.yml",
+   "openapi/_original/punchh-pos-api-openapi.yml",
+   "openapi/_original/punchh-pos-redemptions-legacy-openapi.yml",
+   "openapi/_original/punchh-pos-redemptions-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ready2order",
+  "specs": [
+   "openapi/_original/ready2order-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "roomkeypms",
+  "specs": [
+   "openapi/_original/roomkeypms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scalapay",
+  "specs": [
+   "openapi/_original/scalapay-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "scansource",
+  "specs": [
+   "openapi/_original/scansource-invoice-openapi.yml",
+   "openapi/_original/scansource-product-openapi.yml",
+   "openapi/_original/scansource-sales-order-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scratchpay",
+  "specs": [
+   "openapi/_original/scratchpay-partner-1.0.0-apis-swagger.yml",
+   "openapi/_original/scratchpay-scratchpay-1.0.0-apis-swagger.yml",
+   "openapi/_original/scratchpay-scratchpay-care-credit-1.0.0-apis-swagger.yml"
+  ]
+ },
+ {
+  "slug": "shopback",
+  "specs": [
+   "openapi/_original/shopback-in-store-payments-openapi.yml",
+   "openapi/_original/shopback-online-payments-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shopify",
+  "specs": [
+   "openapi/_original/shopify-admin-rest-api-openapi.yml",
+   "openapi/_original/shopify-ajax-api-openapi.yml",
+   "openapi/_original/shopify-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "silverflow",
+  "specs": [
+   "openapi/_original/silverflow-openapi.yml",
+   "openapi/_original/silverflow-openapi_2.yml"
+  ]
+ },
+ {
+  "slug": "square",
+  "specs": [
+   "openapi/_original/square-openapi.yml"
+  ]
+ },
+ {
+  "slug": "stax",
+  "specs": [
+   "openapi/_original/stax-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "stripe",
+  "specs": [
+   "openapi/_original/accounts-openapi-original.yml",
+   "openapi/_original/application-secrets-openapi-original.yml",
+   "openapi/_original/balance-openapi-original.yml",
+   "openapi/_original/billing-openapi-original.yml",
+   "openapi/_original/charges-openapi-original.yml",
+   "openapi/_original/checkout-openapi-original.yml",
+   "openapi/_original/climate-openapi-original.yml",
+   "openapi/_original/country-openapi-original.yml",
+   "openapi/_original/coupons-openapi-original.yml",
+   "openapi/_original/credit-notes-openapi-original.yml",
+   "openapi/_original/customers-openapi-original.yml",
+   "openapi/_original/disputes-openapi-original.yml",
+   "openapi/_original/ephemeral-keys-openapi-original.yml",
+   "openapi/_original/events-openapi-original.yml",
+   "openapi/_original/exchange-rates-openapi-original.yml",
+   "openapi/_original/files-openapi-original.yml",
+   "openapi/_original/financial-connections-openapi-original.yml",
+   "openapi/_original/identity-openapi-original.yml",
+   "openapi/_original/invoice-openapi-original.yml",
+   "openapi/_original/issuing-openapi-original.yml",
+   "openapi/_original/link-openapi-original.yml",
+   "openapi/_original/openapi:stripe-payment-intents-api-openapi.yml",
+   "openapi/_original/payment-links-openapi-original.yml",
+   "openapi/_original/payment-method-openapi-original.yml",
+   "openapi/_original/payouts-openapi-original.yml",
+   "openapi/_original/plans-openapi-original.yml",
+   "openapi/_original/prices-openapi-original.yml",
+   "openapi/_original/promotion-codes-openapi-original.yml",
+   "openapi/_original/quotes-openapi-original.yml",
+   "openapi/_original/radar-openapi-original.yml",
+   "openapi/_original/refunds-openapi-original.yml",
+   "openapi/_original/reporting-openapi-original.yml",
+   "openapi/_original/reviews-openapi-original.yml",
+   "openapi/_original/setup-openapi-original.yml",
+   "openapi/_original/sigma-openapi-original.yml",
+   "openapi/_original/stripe-apple-pay-api-openapi.yml",
+   "openapi/_original/stripe-application-fees-api-openapi.yml",
+   "openapi/_original/stripe-application-secrets-api-openapi.yml",
+   "openapi/_original/stripe-payment-method-api-openapi.yml",
+   "openapi/_original/stripe-setup-api-openapi.yml",
+   "openapi/_original/stripe-subscription-api-openapi.yml",
+   "openapi/_original/stripe-webhook-api-openapi.yml",
+   "openapi/_original/tax-openapi-original.yml",
+   "openapi/_original/terminal-openapi-original.yml",
+   "openapi/_original/test-helpers-openapi-original.yml",
+   "openapi/_original/tokens-openapi-original.yml",
+   "openapi/_original/topups-openapi-original.yml",
+   "openapi/_original/treasury-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "sumup",
+  "specs": [
+   "openapi/_original/openapi.yaml"
+  ]
+ },
+ {
+  "slug": "switstack",
+  "specs": [
+   "openapi/_original/switstack-switcloud-openapi.json",
+   "openapi/_original/switstack-switcloud-openapi.yml",
+   "openapi/_original/switstack-swittest-openapi.json",
+   "openapi/_original/switstack-swittest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tabit",
+  "specs": [
+   "openapi/_original/tabit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tablecheck",
+  "specs": [
+   "openapi/_original/tablecheck-availability.yml",
+   "openapi/_original/tablecheck-booking.yml",
+   "openapi/_original/tablecheck-crm.yml",
+   "openapi/_original/tablecheck-pos.yml",
+   "openapi/_original/tablecheck-site-controller.yml",
+   "openapi/_original/tablecheck-web-booking.yml"
+  ]
+ },
+ {
+  "slug": "tamara",
+  "specs": [
+   "openapi/_original/tamara-channel-partners-api-openapi.yml",
+   "openapi/_original/tamara-checkout-api-openapi.yml",
+   "openapi/_original/tamara-payments-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "teya",
+  "specs": [
+   "openapi/_original/teya-fx-openapi.yaml",
+   "openapi/_original/teya-online-payments-openapi.yaml",
+   "openapi/_original/teya-payments-openapi.yaml",
+   "openapi/_original/teya-poslink-openapi.json"
+  ]
+ },
+ {
+  "slug": "thefork",
+  "specs": [
+   "openapi/_original/lafourchette-booking-flow-api-openapi.yml",
+   "openapi/_original/lafourchette-data-api-openapi.yml",
+   "openapi/_original/lafourchette-phone-api-openapi.yml",
+   "openapi/_original/lafourchette-review-flow-api-openapi.yml",
+   "openapi/_original/lafourchette-v1-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toast",
+  "specs": [
+   "openapi/_original/toast-analytics-openapi.yaml",
+   "openapi/_original/toast-authentication-openapi.yaml",
+   "openapi/_original/toast-cash-management-openapi.yaml",
+   "openapi/_original/toast-configuration-openapi.yaml",
+   "openapi/_original/toast-credit-cards-openapi.yaml",
+   "openapi/_original/toast-device-details-openapi.yaml",
+   "openapi/_original/toast-gift-cards-openapi.yaml",
+   "openapi/_original/toast-kitchen-openapi.yaml",
+   "openapi/_original/toast-labor-openapi.yaml",
+   "openapi/_original/toast-loyalty-openapi.yaml",
+   "openapi/_original/toast-menus-openapi.yaml",
+   "openapi/_original/toast-menus-v3-openapi.yaml",
+   "openapi/_original/toast-ordermgmt-configuration-openapi.yaml",
+   "openapi/_original/toast-orders-openapi.yaml",
+   "openapi/_original/toast-packaging-openapi.yaml",
+   "openapi/_original/toast-partners-openapi.yaml",
+   "openapi/_original/toast-restaurant-availability-openapi.yaml",
+   "openapi/_original/toast-restaurants-openapi.yaml",
+   "openapi/_original/toast-stock-openapi.yaml",
+   "openapi/_original/toast-tender-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "treez",
+  "specs": [
+   "openapi/_original/treez-catalog-openapi.json",
+   "openapi/_original/treez-catalog.json",
+   "openapi/_original/treez-collections-openapi.json",
+   "openapi/_original/treez-collections.json",
+   "openapi/_original/treez-discount-openapi.json",
+   "openapi/_original/treez-discount.json",
+   "openapi/_original/treez-dispensary-openapi.json",
+   "openapi/_original/treez-dispensary.json",
+   "openapi/_original/treez-jwt-check-openapi.json",
+   "openapi/_original/treez-jwt-check.json",
+   "openapi/_original/treez-product-api.json",
+   "openapi/_original/treez-tag-openapi.json",
+   "openapi/_original/treez-tag.json"
+  ]
+ },
+ {
+  "slug": "tribe-payments",
+  "specs": [
+   "openapi/_original/tribe-payments-obb-bank-api-openapi.json",
+   "openapi/_original/tribe-payments-obb-bank-api-webhooks-openapi.json",
+   "openapi/_original/tribe-payments-obb-tpp-api-openapi.json",
+   "openapi/_original/tribe-payments-obb-tpp-api-webhooks-openapi.json",
+   "openapi/_original/tribe-payments-trb-cc-api-merchant-api-credit-card-callback-v3.json",
+   "openapi/_original/tribe-payments-trb-cc-api-merchant-api-credit-card-v3.json",
+   "openapi/_original/tribe-payments-trb-cc-token-api-merchant-api-credit-card-token-v3.json",
+   "openapi/_original/tribe-payments-trb-cc-token-api-merchant-api-credit-card-token-webhook-v3.json",
+   "openapi/_original/tribe-payments-trb-hpp-api-merchant-api-hpp-v3.json",
+   "openapi/_original/tribe-payments-trb-hpp-api-merchant-api-hpp-webhook-v3.json",
+   "openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json",
+   "openapi/_original/tribe-payments-trb-report-api-merchant-api-report-callback-v3.json",
+   "openapi/_original/tribe-payments-trb-report-api-merchant-api-report-v3.json",
+   "openapi/_original/tribe-payments-trb-risk-monitor-client-api-openapi.json",
+   "openapi/_original/tribe-payments-trb-risk-monitor-client-api-webhooks-openapi.json"
+  ]
+ },
+ {
+  "slug": "tyro",
+  "specs": [
+   "openapi/_original/tyro-connect-booking.yml",
+   "openapi/_original/tyro-connect-locations.yml",
+   "openapi/_original/tyro-connect-loyalty.yml",
+   "openapi/_original/tyro-connect-menu.yml",
+   "openapi/_original/tyro-connect-ordering.yml",
+   "openapi/_original/tyro-connect-pay.yml",
+   "openapi/_original/tyro-connect-referrals.yml",
+   "openapi/_original/tyro-connect-refunds.yml",
+   "openapi/_original/tyro-connect-reporting.yml",
+   "openapi/_original/tyro-connect-sales.yml",
+   "openapi/_original/tyro-connect-tables.yml",
+   "openapi/_original/tyro-pos-embedded-payments.yml",
+   "openapi/_original/tyro-pos-pay-terminal.yml"
+  ]
+ },
+ {
+  "slug": "urbanpiper",
+  "specs": [
+   "openapi/_original/urbanpiper-openapi.yml"
+  ]
+ },
+ {
+  "slug": "verifone",
+  "specs": [
+   "openapi/_original/3ds-authentication-api.json",
+   "openapi/_original/checkout-api.json",
+   "openapi/_original/customer-api.json",
+   "openapi/_original/ecommerce-api.json",
+   "openapi/_original/order-service-api.json",
+   "openapi/_original/paypal-ecommerce-api.json",
+   "openapi/_original/reporting-api.json"
+  ]
+ },
+ {
+  "slug": "vori",
+  "specs": [
+   "openapi/_original/vori-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wellnessliving",
+  "specs": [
+   "openapi/_original/wellnessliving-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zettle",
+  "specs": [
+   "openapi/_original/zettle-finance-api-openapi.yaml"
+  ]
+ }
+]

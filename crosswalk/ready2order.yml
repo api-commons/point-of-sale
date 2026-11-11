@@ -1,0 +1,12 @@
+provider: ready2order
+apis_io: https://apis.io/providers/ready2order/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  sale:
+    path_segment:
+    - sales
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/ready2order-openapi-original.json#POST /export/sales

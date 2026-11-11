@@ -1,0 +1,26 @@
+provider: mindbody
+apis_io: https://apis.io/providers/mindbody/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  store_location:
+    path_segment:
+    - locations
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/site/locations
+  sale:
+    path_segment:
+    - sales
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/sale/sales
+  shift:
+    path_segment:
+    - timecards
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/payroll/timecards

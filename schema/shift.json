@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/point-of-sale/main/schema/shift.json",
+  "title": "Shift",
+  "description": "The common shift in Point of Sale, distilled from 5 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "created_at"
+      ],
+      "format": "date-time"
+    },
+    "employee_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "employee_id",
+        "team_member_id",
+        "staffId",
+        "user_id"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "id",
+        "uuid"
+      ]
+    },
+    "location_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "location_id",
+        "businessLocationId"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "updated_at"
+      ],
+      "format": "date-time"
+    },
+    "version": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "version"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "point-of-sale",
+    "concept": "shift",
+    "providers": 5,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

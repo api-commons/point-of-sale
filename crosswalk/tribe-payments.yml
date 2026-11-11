@@ -1,0 +1,26 @@
+provider: tribe-payments
+apis_io: https://apis.io/providers/tribe-payments/
+context: point-of-sale
+generated: '2026-11-10'
+concepts:
+  terminal:
+    path_segment:
+    - terminals
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#DELETE /hosts/{hostId}/terminals/{terminalId}
+    - openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /apps/{appId}/terminals/{terminalId}
+    - openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /hosts/{hostId}/terminals
+    - openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /hosts/{hostId}/terminals/{terminalId}
+    - openapi/_original/tribe-payments-trb-isac-pos-tdd-device-api-openapi-device-directory-api-v3.json#GET /processors/{processorId}/terminals/{terminalId}
+  sale:
+    path_segment:
+    - sale
+    properties:
+      customer_id: customer
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tribe-payments-trb-cc-api-merchant-api-credit-card-v3.json#POST /sale
+    - openapi/_original/tribe-payments-trb-cc-token-api-merchant-api-credit-card-token-v3.json#POST /sale
