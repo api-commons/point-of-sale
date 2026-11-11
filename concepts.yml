@@ -73,8 +73,8 @@ findings:
     to ring a sale."
   - "A sale agrees only on an id: POS systems call it a sale, a transaction, a check, a ticket
     or an order, and carry items, taxes and tenders under as many names."
-  - "Terminals are thin (4 providers, agreeing only on id and name); shifts (5) agree well --
-    employee, location, status and timestamps."
+  - "Terminals are thin (4 providers, agreeing only on id and name); shifts (5) agree on the
+    employee, the location and timestamps."
 decisions:
   - "Store locations are `/store-locations`: `/locations` means a work site in HR and a
     restaurant in food ordering."

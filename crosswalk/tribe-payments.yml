@@ -20,7 +20,7 @@ concepts:
     - sale
     properties:
       customer_id: customer
-    core_coverage: 0.0
+    core_coverage: 0.5
     evidence:
     - openapi/_original/tribe-payments-trb-cc-api-merchant-api-credit-card-v3.json#POST /sale
     - openapi/_original/tribe-payments-trb-cc-token-api-merchant-api-credit-card-token-v3.json#POST /sale

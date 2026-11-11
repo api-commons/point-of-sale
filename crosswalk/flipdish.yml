@@ -11,14 +11,14 @@ concepts:
     properties:
       name: Name
       phone: PhoneNumber
-      status: Active
       address: Address
+      status: Active
       currency: Currency
       latitude: Latitude
       location_id: StoreId
       longitude: Longitude
       logo_url: LogoUrl
-    core_coverage: 0.625
+    core_coverage: 0.727
     evidence:
     - openapi/_original/flipdish-apps-openapi.json#DELETE /api/v1.0/{appId}/channels/{channelId}/stores
     - openapi/_original/flipdish-apps-openapi.json#DELETE /api/v1.0/{appId}/channels/{channelId}/stores/{storeId}

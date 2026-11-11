@@ -6,21 +6,36 @@ concepts:
   store_location:
     path_segment:
     - locations
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: Name
+      phone: Phone
+      address: Address
+      id: Id
+      latitude: Latitude
+      location_id: SiteID
+      longitude: Longitude
+      description: Description
+      city: City
+    core_coverage: 0.636
     evidence:
     - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/site/locations
   sale:
     path_segment:
     - sales
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      id: Id
+      customer_id: ClientId
+      payments: Payments
+      location_id: LocationId
+      created_at: SaleDate
+    core_coverage: 1.0
     evidence:
     - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/sale/sales
   shift:
     path_segment:
     - timecards
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      employee_id: StaffId
+    core_coverage: 0.167
     evidence:
     - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/payroll/timecards

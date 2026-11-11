@@ -8,11 +8,11 @@ concepts:
     - stores
     properties:
       id: id
-      created_at: created_at
       location_id: store_id
+      created_at: created_at
       description: description
       updated_at: updated_at
-    core_coverage: 0.125
+    core_coverage: 0.182
     evidence:
     - openapi/_original/newstore-api-openapi-original.json#DELETE /taxes/config/stores/{id}
     - openapi/_original/newstore-api-openapi-original.json#GET /stores

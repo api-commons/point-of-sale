@@ -9,16 +9,16 @@ concepts:
     properties:
       name: name
       phone: phone_number
-      status: status
       address: address
       id: id
+      status: status
       country: country
       currency: currency
       time_zone: timezone
       created_at: created_at
       description: description
       logo_url: logo_url
-    core_coverage: 1.0
+    core_coverage: 0.727
     evidence:
     - openapi/_original/block-openapi.json#GET /v2/locations
     - openapi/_original/block-openapi.json#GET /v2/locations/{location_id}
@@ -31,8 +31,8 @@ concepts:
       id: id
       customer_id: client_id
       payments: tenders
-      created_at: created_at
       location_id: location_id
+      created_at: created_at
     core_coverage: 1.0
     evidence:
     - openapi/_original/block-openapi.json#GET /v2/locations/{location_id}/transactions
@@ -42,15 +42,12 @@ concepts:
     - shifts
     - timecards
     properties:
-      created_at: created_at
       employee_id:
       - employee_id
       - team_member_id
+      created_at: created_at
       id: id
       location_id: location_id
-      status:
-      - state
-      - status
       updated_at: updated_at
       version: version
     core_coverage: 1.0

@@ -71,22 +71,39 @@ concepts:
     properties:
     - name: name
       tier: core
-      providers: 8
-      share: 0.8
+      providers: 9
+      share: 0.9
       type: string
       spellings:
       - name
       - Name
     - name: phone
       tier: core
-      providers: 7
-      share: 0.7
+      providers: 8
+      share: 0.8
       type: string
       spellings:
       - phone_number
       - phone
-      - PhoneNumber
       - Phone
+      - PhoneNumber
+    - name: address
+      tier: core
+      providers: 7
+      share: 0.7
+      type: object
+      spellings:
+      - address
+      - Address
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.7
+      type: string
+      spellings:
+      - id
+      - Id
+      - uuid
     - name: status
       tier: core
       providers: 7
@@ -98,23 +115,6 @@ concepts:
       - Active
       - IsActive
       - state
-    - name: address
-      tier: core
-      providers: 6
-      share: 0.6
-      type: object
-      spellings:
-      - address
-      - Address
-    - name: id
-      tier: core
-      providers: 6
-      share: 0.6
-      type: string
-      spellings:
-      - id
-      - uuid
-      - Id
     - name: country
       tier: core
       providers: 5
@@ -132,6 +132,33 @@ concepts:
       - currency
       - Currency
       - CurrencyCode
+    - name: latitude
+      tier: core
+      providers: 5
+      share: 0.5
+      type: number
+      spellings:
+      - latitude
+      - Latitude
+    - name: location_id
+      tier: core
+      providers: 5
+      share: 0.5
+      type: integer
+      spellings:
+      - StoreId
+      - SiteID
+      - store_id
+      - location_id
+      - locationId
+    - name: longitude
+      tier: core
+      providers: 5
+      share: 0.5
+      type: number
+      spellings:
+      - longitude
+      - Longitude
     - name: time_zone
       tier: core
       providers: 5
@@ -147,39 +174,22 @@ concepts:
       type: string
       spellings:
       - created_at
-    - name: latitude
-      tier: extended
-      providers: 4
-      share: 0.4
-      type: number
-      spellings:
-      - latitude
-      - Latitude
-    - name: location_id
-      tier: extended
-      providers: 4
-      share: 0.4
-      type: integer
-      spellings:
-      - StoreId
-      - store_id
-      - location_id
-      - locationId
-    - name: longitude
-      tier: extended
-      providers: 4
-      share: 0.4
-      type: number
-      spellings:
-      - longitude
-      - Longitude
     - name: description
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: string
+      spellings:
+      - description
+      - Description
+    - name: city
       tier: extended
       providers: 3
       share: 0.3
       type: string
       spellings:
-      - description
+      - City
+      - city
     - name: email
       tier: extended
       providers: 3
@@ -203,12 +213,12 @@ concepts:
       type: string
       spellings:
       - updated_at
-    long_tail_count: 162
+    long_tail_count: 173
     long_tail_sample:
+    - address2
     - business_email
     - business_name
     - capabilities
-    - city
     - coordinates
     - external_store_id
     - facebook_url
@@ -226,25 +236,25 @@ concepts:
     - type
     - version
     - website_url
+    - additional_image_ur_ls
     - additional_url
     - address1
-    - address2
     - allow_chef_notes
     - allow_pre_orders_and_table_service
     - alternate_store_number
     - always_appear_open
+    - amenities
     - apm_phone_number
     - app_id
     - app_ids
     - automatically_accept_orders
     - avalara
+    - average_rating
     - brand
+    - business_description
     - card_order_delivery_enabled
     - card_orders_pickup_enabled
     - cash_orders_delivery_enabled
-    - cash_orders_pickup_enabled
-    - cashboxes
-    - cell_phone
   terminal:
     segments_seen:
       readers: 2
@@ -365,56 +375,78 @@ concepts:
     properties:
     - name: id
       tier: core
-      providers: 11
-      share: 0.611
+      providers: 12
+      share: 0.667
       type: string
       spellings:
       - id
-      - uuid
       - Id
+      - uuid
     - name: customer_id
-      tier: extended
-      providers: 8
-      share: 0.444
+      tier: core
+      providers: 9
+      share: 0.5
       type: string
       spellings:
       - client_id
       - customer
       - customer_id
+      - ClientId
     - name: payments
       tier: extended
-      providers: 7
-      share: 0.389
+      providers: 8
+      share: 0.444
       type: array
       spellings:
       - payments
       - tenders
       - Payments
-    - name: status
-      tier: extended
-      providers: 6
-      share: 0.333
-      type: string
-      spellings:
-      - status
-      - state
-    - name: created_at
-      tier: extended
-      providers: 5
-      share: 0.278
-      type: string
-      spellings:
-      - created_at
     - name: location_id
       tier: extended
-      providers: 5
-      share: 0.278
+      providers: 7
+      share: 0.389
       type: string
       spellings:
       - location_id
       - location
       - outlet_id
+      - LocationId
       - locationId
+    - name: created_at
+      tier: extended
+      providers: 6
+      share: 0.333
+      type: string
+      spellings:
+      - created_at
+      - SaleDate
+    - name: status
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: string
+      spellings:
+      - status
+      - state
+    - name: tax
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: number
+      spellings:
+      - taxes
+      - tax_amount
+      - total_tax
+      - tax
+    - name: discount
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: array
+      spellings:
+      - discounts
+      - discount_amount
+      - Discounts
     - name: line_items
       tier: extended
       providers: 4
@@ -423,15 +455,13 @@ concepts:
       spellings:
       - line_items
       - items
-    - name: tax
+    - name: type
       tier: extended
       providers: 4
       share: 0.222
-      type: array
+      type: string
       spellings:
-      - taxes
-      - total_tax
-      - tax
+      - type
     - name: updated_at
       tier: extended
       providers: 4
@@ -439,13 +469,12 @@ concepts:
       type: string
       spellings:
       - updated_at
-    long_tail_count: 181
+    long_tail_count: 248
     long_tail_sample:
-    - discount
     - employee_id
     - metadata
-    - total
-    - type
+    - register_id
+    - brand
     - date
     - merchant_data
     - order_id
@@ -454,10 +483,15 @@ concepts:
     - receipt_number
     - reference_id
     - refunds
-    - register_id
     - shipping_address
+    - short_code
     - source
     - subtotal
+    - total
+    - account_category
+    - account_fisc_id
+    - account_profile_code
+    - account_reference
     - accounts_transaction_id
     - acquirer_data
     - address
@@ -467,20 +501,16 @@ concepts:
     - anniversary
     - articles
     - avatar_remote_url
+    - avg_check
     - balance
+    - base_unit_of_measurement
     - birthday
     - booking_id
-    - brand
+    - bypass_checks
+    - c_micros_checks
+    - calendar_date
+    - cancelled
     - card
-    - card_number
-    - cart_id
-    - cart_version_id
-    - cashier_name
-    - catering
-    - cc_last4
-    - chain_id
-    - channel
-    - charges
   shift:
     segments_seen:
       shifts: 4
@@ -510,6 +540,17 @@ concepts:
       share: 0.4
       tier: long-tail
     properties:
+    - name: employee_id
+      tier: core
+      providers: 5
+      share: 1.0
+      type: string
+      spellings:
+      - employee_id
+      - team_member_id
+      - staffId
+      - user_id
+      - StaffId
     - name: created_at
       tier: core
       providers: 3
@@ -517,16 +558,6 @@ concepts:
       type: string
       spellings:
       - created_at
-    - name: employee_id
-      tier: core
-      providers: 3
-      share: 0.6
-      type: string
-      spellings:
-      - employee_id
-      - team_member_id
-      - staffId
-      - user_id
     - name: id
       tier: core
       providers: 3
@@ -543,14 +574,6 @@ concepts:
       spellings:
       - location_id
       - businessLocationId
-    - name: status
-      tier: core
-      providers: 3
-      share: 0.6
-      type: string
-      spellings:
-      - status
-      - state
     - name: updated_at
       tier: core
       providers: 3
@@ -565,39 +588,45 @@ concepts:
       type: integer
       spellings:
       - version
-    long_tail_count: 34
+    long_tail_count: 50
     long_tail_sample:
     - breaks
     - cash_paid_in_money
     - cash_paid_out_money
     - cash_payment_money
     - cash_refunds_money
+    - category
     - closed_at
     - closed_cash_money
     - closing_team_member_id
+    - code
     - declared_cash_tip_money
     - description
+    - detail
     - device
     - end_at
     - ending_team_member_id
     - expected_cash_money
+    - field
     - idempotency_key
     - opened_at
     - opened_cash_money
     - opening_team_member_id
     - start_at
+    - status
     - team_member_ids
+    - time_in
+    - time_out
     - timezone
     - wage
     - business_id
     - date_in_utc
     - declared_cash_tips
     - device_id
+    - earnings
+    - employee_name
     - events
-    - pagination_response
-    - retailer_id
-    - scheduled_shifts
-    - time_in
-    - time_out
-    - timecard
-    - updated_by
+    - hourly_rate
+    - hours
+    - manager_email
+    - manager_id

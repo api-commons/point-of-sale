@@ -10,8 +10,10 @@ concepts:
       id: id
       customer_id: customer
       payments: payments
-      line_items: line_items
       tax: taxes
+      discount: discounts
+      line_items: line_items
+      type: type
     core_coverage: 1.0
     evidence:
     - openapi/_original/green-check-verified-access-openapi.yaml#GET /crbs/{crb_id}/sales

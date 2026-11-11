@@ -8,8 +8,8 @@
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.8,
-      "x-commons-providers": 8,
+      "x-commons-share": 0.9,
+      "x-commons-providers": 9,
       "x-commons-spellings": [
         "name",
         "Name"
@@ -18,13 +18,34 @@
     "phone": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.7,
-      "x-commons-providers": 7,
+      "x-commons-share": 0.8,
+      "x-commons-providers": 8,
       "x-commons-spellings": [
         "phone_number",
         "phone",
-        "PhoneNumber",
-        "Phone"
+        "Phone",
+        "PhoneNumber"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.7,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "address",
+        "Address"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.7,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "id",
+        "Id",
+        "uuid"
       ]
     },
     "status": {
@@ -38,27 +59,6 @@
         "Active",
         "IsActive",
         "state"
-      ]
-    },
-    "address": {
-      "type": "object",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.6,
-      "x-commons-providers": 6,
-      "x-commons-spellings": [
-        "address",
-        "Address"
-      ]
-    },
-    "id": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.6,
-      "x-commons-providers": 6,
-      "x-commons-spellings": [
-        "id",
-        "uuid",
-        "Id"
       ]
     },
     "country": {
@@ -82,6 +82,39 @@
         "CurrencyCode"
       ]
     },
+    "latitude": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "latitude",
+        "Latitude"
+      ]
+    },
+    "location_id": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "StoreId",
+        "SiteID",
+        "store_id",
+        "location_id",
+        "locationId"
+      ]
+    },
+    "longitude": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "longitude",
+        "Longitude"
+      ]
+    },
     "time_zone": {
       "type": "string",
       "x-commons-tier": "core",
@@ -102,45 +135,24 @@
       ],
       "format": "date-time"
     },
-    "latitude": {
-      "type": "number",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.4,
-      "x-commons-providers": 4,
-      "x-commons-spellings": [
-        "latitude",
-        "Latitude"
-      ]
-    },
-    "location_id": {
-      "type": "integer",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.4,
-      "x-commons-providers": 4,
-      "x-commons-spellings": [
-        "StoreId",
-        "store_id",
-        "location_id",
-        "locationId"
-      ]
-    },
-    "longitude": {
-      "type": "number",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.4,
-      "x-commons-providers": 4,
-      "x-commons-spellings": [
-        "longitude",
-        "Longitude"
-      ]
-    },
     "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "description",
+        "Description"
+      ]
+    },
+    "city": {
       "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.3,
       "x-commons-providers": 3,
       "x-commons-spellings": [
-        "description"
+        "City",
+        "city"
       ]
     },
     "email": {
