@@ -1,7 +1,7 @@
 provider: green-check-verified
 apis_io: https://apis.io/providers/green-check-verified/
 context: point-of-sale
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   sale:
     path_segment:

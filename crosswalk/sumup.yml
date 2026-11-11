@@ -1,7 +1,7 @@
 provider: sumup
 apis_io: https://apis.io/providers/sumup/
 context: point-of-sale
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   terminal:
     path_segment:

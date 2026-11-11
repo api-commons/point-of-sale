@@ -17,7 +17,7 @@ generated. Every number below is a count of providers.
 | sale | 20 | 18 | id 67%, customer_id 50% | sales 9, receipts 5, transactions 3, checks 2 |
 | shift | 5 | 5 | employee_id 100%, created_at 60%, id 60%, location_id 60%, updated_at 60%, version 60% | shifts 4, timecards 2, shift 1 |
 
-Cohort: 84 providers with harvested OpenAPI, 20 crosswalks. Of the providers exposing a store_location: 64% create, 100% list, 82% fetch, 55% update, 36% delete. Generated 2026-11-10 by build.py.
+Cohort: 84 providers with harvested OpenAPI, 20 crosswalks. Of the providers exposing a store_location: 64% create, 100% list, 82% fetch, 55% update, 36% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -26,7 +26,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 ## What the measurement shows
 
 - A store location agrees on name, address, phone, status, country, currency and time zone -- the most complete location core in the commons, because a POS needs every one of them to ring a sale.
-- A sale agrees only on an id: POS systems call it a sale, a transaction, a check, a ticket or an order, and carry items, taxes and tenders under as many names.
+- A sale agrees only on an id and the customer -- POS systems call it a sale, a transaction, a check, a ticket or an order, and carry items, taxes and tenders under as many names.
 - Terminals are thin (4 providers, agreeing only on id and name); shifts (5) agree on the employee, the location and timestamps.
 
 ## Artifacts

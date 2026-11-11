@@ -1,7 +1,7 @@
 provider: mindbody
 apis_io: https://apis.io/providers/mindbody/
 context: point-of-sale
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   store_location:
     path_segment:

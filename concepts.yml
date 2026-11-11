@@ -71,8 +71,9 @@ findings:
   - "A store location agrees on name, address, phone, status, country, currency and time zone
     -- the most complete location core in the commons, because a POS needs every one of them
     to ring a sale."
-  - "A sale agrees only on an id: POS systems call it a sale, a transaction, a check, a ticket
-    or an order, and carry items, taxes and tenders under as many names."
+  - "A sale agrees only on an id and the customer -- POS systems call it a sale, a
+    transaction, a check, a ticket or an order, and carry items, taxes and tenders under as
+    many names."
   - "Terminals are thin (4 providers, agreeing only on id and name); shifts (5) agree on the
     employee, the location and timestamps."
 decisions:
